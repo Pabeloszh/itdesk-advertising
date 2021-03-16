@@ -1,0 +1,101 @@
+.slide-container{
+    width:100%;
+    height:100%;
+    position:absolute;
+    // position:relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+
+    .slide-desc{
+        width:100%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        text-align: center;
+        h4{
+            color:#EF7A07;
+            font-family: 'Kristi', cursive;
+            font-size:60px;
+            font-weight: 500;
+            margin-bottom:-20px;
+        }
+        h2{
+            color:#fff;
+            font-size: 70px;
+            font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+            font-weight: 1000;
+            letter-spacing: 2px;
+            line-height: 1em;
+            margin-bottom:10px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            color: #fff;
+            // text-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+        }
+        button{
+            color:#fff;
+            border-width: 0px;
+            border-radius:3px;
+            letter-spacing: 2px;
+            font-size: 14px;
+            font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: #ef7a07;
+            padding: 14px 30px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .slide-container{
+        .slide-desc{
+            h4{
+                font-size:40px;
+            }
+            h2{
+                font-size:36px;
+            }
+            p{
+                font-size: 14px;
+            }
+            button{
+                font-size:12px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .slide-container{
+        .slide-desc{
+            h4{
+                font-size:30px;
+                margin-bottom: -10px;
+            }
+            h2{
+                font-size:24px;
+            }
+            p{
+                font-size: 12px;
+            }
+            button{
+                font-size:10px;
+                margin-top: 10px;
+                padding: 14px 16px;
+
+            }
+        }
+    }
+}

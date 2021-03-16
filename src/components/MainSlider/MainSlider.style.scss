@@ -1,0 +1,44 @@
+.main-container{
+    width:100%;
+    height:70vh;
+    position:relative;
+    background-color: gray;
+    .prev-next{
+        width:100%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        display:flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        i{
+            transition:all 300ms ease-in-out;
+            font-size: 45px;
+            color: #fff;
+        }
+    }
+    .dots{
+        position:absolute;
+        bottom: 10px;
+        left:50%;
+        transform:translate(-50%,-50%);
+        display:flex;
+        justify-content: space-between;
+        p{
+            transition:all 300ms ease-in-out;
+            font-size:35px;
+            color:#fff;
+            margin: 0 10px;
+            opacity:0.5;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .main-container{
+        .prev-next{
+            display:none;
+        }
+    }
+}
