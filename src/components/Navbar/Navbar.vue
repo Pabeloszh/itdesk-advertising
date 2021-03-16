@@ -1,5 +1,5 @@
 <template>
-  <div id="chuj" class="navbar-container" :class="navbarToggler ? 'scrolled' : ''">
+  <div class="navbar-container" :class="navbarToggler ? 'scrolled' : ''">
     <div class="logo">
       <img src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/itdesk-advertising-logo-w.svg" alt="logo">
     </div>
