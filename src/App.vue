@@ -4,6 +4,7 @@
     <Services/>
     <ContactUs/>
     <AboutUs/>
+    <Blog/>
 </template>
 
 <script>
@@ -13,6 +14,7 @@ import MainSlider from "@/components/MainSlider/MainSlider.vue";
 import Services from "@/components/Services/Services.vue";
 import ContactUs from "@/components/ContactUs/ContactUs.vue"
 import AboutUs from "@/components/AboutUs/AboutUs.vue"
+import Blog from "@/components/Blog/Blog.vue"
 
 
 export default {
@@ -22,7 +24,8 @@ export default {
     MainSlider,
     Services,
     ContactUs,
-    AboutUs
+    AboutUs,
+    Blog
   }
 };
 </script>
