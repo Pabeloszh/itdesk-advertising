@@ -1,18 +1,21 @@
 <template>
     <Navbar/>
     <MainSlider/>
+    <Services/>
 </template>
 
 <script>
 // @ is an alias to /src
 import Navbar from "@/components/Navbar/Navbar.vue";
 import MainSlider from "@/components/MainSlider/MainSlider.vue";
+import Services from "@/components/Services/Services.vue"
 
 export default {
   name: "App",
   components: {
     Navbar,
-    MainSlider
+    MainSlider,
+    Services
   }
 };
 </script>
