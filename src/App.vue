@@ -3,6 +3,7 @@
     <MainSlider/>
     <Services/>
     <ContactUs/>
+    <AboutUs/>
 </template>
 
 <script>
@@ -11,6 +12,7 @@ import Navbar from "@/components/Navbar/Navbar.vue";
 import MainSlider from "@/components/MainSlider/MainSlider.vue";
 import Services from "@/components/Services/Services.vue";
 import ContactUs from "@/components/ContactUs/ContactUs.vue"
+import AboutUs from "@/components/AboutUs/AboutUs.vue"
 
 
 export default {
@@ -19,7 +21,8 @@ export default {
     Navbar,
     MainSlider,
     Services,
-    ContactUs
+    ContactUs,
+    AboutUs
   }
 };
 </script>
