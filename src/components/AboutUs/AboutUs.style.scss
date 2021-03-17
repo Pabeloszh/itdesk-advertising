@@ -1,0 +1,98 @@
+.about-container{
+    width:100%;
+    padding:60px 10%;
+    .about-title{
+        text-align: center;
+        margin-bottom:60px;
+        h4{
+            font-family: Kristi;
+            color: #EF7A07;
+            font-size: 60px;
+            margin-bottom: -26px;
+            line-height: 1em;
+            font-weight: 500;
+        }
+        h2{
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 60px;
+            line-height: 1.1em;
+            font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+            color: #353740;
+        }
+    }
+    .about-desc{
+        display:flex;
+        .about-info, .about-list{
+            width:50%;
+        }
+        .about-info{
+            padding-right:75px;
+            p{
+                line-height: 1.8em;
+                font-size:18px;
+                color: #353740;
+                font-weight: 500;
+                font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            }
+        }
+        .about-list{
+            // margin-left:15px;
+            div{
+                border-bottom: 1px dotted #848484;
+                padding:20px 0;
+                h4{
+                    font-weight: 100;
+                    font-size: 28px;
+                    color: #353740;
+                    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+                }
+            }
+            div:last-child{
+                border:none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .about-container{
+        .about-desc{
+            flex-direction: column;
+            .about-info, .about-list{
+                width:100%;
+            }
+            .about-info{
+                padding:0;
+                margin-bottom:55px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px){
+    .about-container{
+        .about-title{
+            h4{
+                font-size:40px;
+                margin-bottom:-15px;
+            }
+            h2{
+                font-size:36px;
+            }
+        }
+        .about-desc{
+            .about-info{
+                p{
+                    font-size:16px;
+                }
+            }
+            .about-list{
+                div{
+                    h4{
+                        font-size:18px;
+                    }
+                }
+            }
+        }
+    }
+}
