@@ -6,6 +6,7 @@
     <AboutUs/>
     <Blog/>
     <ContactForm/>
+    <Footer/>
 </template>
 
 <script>
@@ -17,6 +18,7 @@ import ContactUs from "@/components/ContactUs/ContactUs.vue"
 import AboutUs from "@/components/AboutUs/AboutUs.vue"
 import Blog from "@/components/Blog/Blog.vue"
 import ContactForm from "@/components/ContactForm/ContactForm.vue"
+import Footer from "@/components/Footer/Footer.vue"
 
 export default {
   name: "App",
@@ -27,7 +29,8 @@ export default {
     ContactUs,
     AboutUs,
     Blog,
-    ContactForm
+    ContactForm,
+    Footer
   }
 };
 </script>
