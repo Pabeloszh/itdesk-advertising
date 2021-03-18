@@ -28,7 +28,7 @@
             margin-bottom:15px;
         }
         p{
-            width:800px;
+            max-width:800px;
             margin:0 auto;
             color: #353740;
             font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
@@ -118,6 +118,9 @@
                 }
                 input, select, textarea{
                     margin: 10px 0;
+                }
+                textarea{
+                    margin-bottom: 60px;
                 }
             }
         }
