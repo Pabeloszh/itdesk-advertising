@@ -79,16 +79,9 @@
     }
 }
 
-@media only screen and (max-width: 1024px){
-    .cform-container{
-        .cform-title{
-
-        }
-    }
-}
-
 @media only screen and (max-width: 768px){
     .cform-container{
+        padding:60px 4%;
         .cform-title{
             h4{
                 font-family: Kristi;
