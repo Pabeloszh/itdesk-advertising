@@ -6,6 +6,7 @@ import MarketingCare from "../views/MarketingCare.vue";
 import GoogleAds from "../views/GoogleAds.vue";
 import SiteAudit from "../views/SiteAudit.vue";
 import CompanyBlogDesc from "../views/CompanyBlog.vue";
+import Mailing from "../views/Mailing.vue"
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: "/blog-firmowy",
     name: "CompanyBlogDesc",
     component: CompanyBlogDesc
+  },
+  {
+    path: "/mailing",
+    name: "Mailing",
+    component: Mailing
   }
 ];
 
