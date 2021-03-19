@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import Offers from "../views/Offers.vue"
-import Marketing from "../views/Marketing.vue"
-import MarketingCare from "../views/MarketingCare.vue"
-import GoogleAds from "../views/GoogleAds.vue"
-import SiteAudit from "../views/SiteAudit.vue"
-import CompanyBlogDesc from "../views/CompanyBlog.vue"
+import Offers from "../views/Offers.vue";
+import Marketing from "../views/Marketing.vue";
+import MarketingCare from "../views/MarketingCare.vue";
+import GoogleAds from "../views/GoogleAds.vue";
+import SiteAudit from "../views/SiteAudit.vue";
+import CompanyBlogDesc from "../views/CompanyBlog.vue";
 
 const routes = [
   {
@@ -42,8 +42,7 @@ const routes = [
     path: "/blog-firmowy",
     name: "CompanyBlogDesc",
     component: CompanyBlogDesc
-  },
-
+  }
 ];
 
 const router = createRouter({
