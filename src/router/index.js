@@ -5,6 +5,7 @@ import Marketing from "../views/Marketing.vue"
 import MarketingCare from "../views/MarketingCare.vue"
 import GoogleAds from "../views/GoogleAds.vue"
 import SiteAudit from "../views/SiteAudit.vue"
+import CompanyBlogDesc from "../views/CompanyBlog.vue"
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/audyt-strony-internetowej",
     name: "SiteAudit",
     component: SiteAudit
+  },
+  {
+    path: "/blog-firmowy",
+    name: "CompanyBlogDesc",
+    component: CompanyBlogDesc
   },
 
 ];
