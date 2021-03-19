@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Offers from "../views/Offers.vue"
 import Marketing from "../views/Marketing.vue"
+import MarketingCare from "../views/MarketingCare.vue"
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: "/marketing-internetowy",
     name: "Marketing",
     component: Marketing
+  },
+  {
+    path: "/opieka-marketingowa",
+    name: "MarketingCare",
+    component: MarketingCare
   }
 ];
 
