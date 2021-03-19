@@ -4,6 +4,7 @@ import Offers from "../views/Offers.vue"
 import Marketing from "../views/Marketing.vue"
 import MarketingCare from "../views/MarketingCare.vue"
 import GoogleAds from "../views/GoogleAds.vue"
+import SiteAudit from "../views/SiteAudit.vue"
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: "/google-ads",
     name: "GoogleAds",
     component: GoogleAds
+  },
+  {
+    path: "/audyt-strony-internetowej",
+    name: "SiteAudit",
+    component: SiteAudit
   },
 
 ];
