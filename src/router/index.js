@@ -6,7 +6,9 @@ import MarketingCare from "../views/MarketingCare.vue";
 import GoogleAds from "../views/GoogleAds.vue";
 import SiteAudit from "../views/SiteAudit.vue";
 import CompanyBlogDesc from "../views/CompanyBlog.vue";
-import Mailing from "../views/Mailing.vue"
+import Mailing from "../views/Mailing.vue";
+import Positioning from "../views/Positioning.vue";
+import SocialMedia from "../views/SocialMedia.vue"
 
 const routes = [
   {
@@ -48,6 +50,16 @@ const routes = [
     path: "/mailing",
     name: "Mailing",
     component: Mailing
+  },
+  {
+    path: "/pozycjonowanie",
+    name: "Positioning",
+    component: Positioning
+  },
+  {
+    path: "/social-media",
+    name: "SocialMedia",
+    component: SocialMedia
   }
 ];
 
