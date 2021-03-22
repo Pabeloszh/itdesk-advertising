@@ -1,19 +1,19 @@
 <template>
   <Title :groupedProps="marketing" />
-  <GoogleAdsDesc />
+  <!-- <GoogleAdsDesc /> -->
   <MarketingBox />
   <ContactForm />
 </template>
 <script>
 import Title from "@/components/Title/Title.vue";
-import GoogleAdsDesc from "@/components/GoogleAdsDesc/GoogleAdsDesc.vue";
+// import GoogleAdsDesc from "@/components/GoogleAdsDesc/GoogleAdsDesc.vue";
 import MarketingBox from "@/components/MarketingBox/MarketingBox.vue";
 import ContactForm from "@/components/ContactForm/ContactForm.vue";
 export default {
   name: "OnlineStores",
   components: {
     Title,
-    GoogleAdsDesc,
+    // GoogleAdsDesc,
     MarketingBox,
     ContactForm
   },

@@ -1,4 +1,5 @@
 <template>
+  <Title :groupedProps="titleData" />
   <div class="mcare-container">
     <div class="mcare-desc">
       <div>
@@ -125,8 +126,24 @@
   </div>
 </template>
 <script>
+import Title from "@/components/Title/Title.vue";
 export default {
-  name: "MCareDesc"
+  name: "MarketingCare",
+  components:{
+    Title
+  },
+  data() {
+    return {
+      titleData: {
+        backgroundPhoto: {
+          backgroundImage:
+            "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/back9.jpg)"
+        },
+        desc: "Wygodna",
+        title: "OPIEKA MARKETINGOWA"
+      }
+    };
+  }
 };
 </script>
-<style scoped lang="scss" src="./MCareDesc.style.scss"></style>
+<style scoped lang="scss" src="./MarketingCare.style.scss"></style>

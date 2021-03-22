@@ -1,4 +1,5 @@
 <template>
+    <Title :groupedProps="titleData"/>
     <div class="positioning-container">
         <div>
             <p>Dzisiejszy klient szuka szybkich odpowiedzi na swoje pytania, nie ma czasu przeglądać wielu linków wyświetlonych po jego słowie kluczowym. Dlatego, aby osiągnąć sukces, Twoja firma musi znaleźć się w Top10 wynikach wyszukiwania. Im wyższa pozycja, tym efektywniejsza sprzedaży. Zleć u nas pozycjonowanie !</p>
@@ -25,10 +26,26 @@
     </div>
 </template>
 <script>
+import Title from "@/components/Title/Title.vue"
 export default {
-    name:"PositioningDesc"
+    name: "Positioning",
+    components: {
+        Title,
+    },
+    data() {
+        return {
+        titleData: {
+            backgroundPhoto: {
+            backgroundImage:
+                "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/back9.jpg)"
+            },
+            desc: "Efektywne",
+            title: "POZYCJONOWANIE"
+        }
+        };
+    }
 }
 </script>
-<style scoped lang="scss" src="./PositioningDesc.style.scss">
+<style scoped lang="scss" src="./Positioning.style.scss">
 
 </style>

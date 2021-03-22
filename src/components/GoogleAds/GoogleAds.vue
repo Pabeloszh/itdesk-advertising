@@ -1,4 +1,5 @@
 <template>
+  <Title :groupedProps="titleData"/>
   <div class="gads-desc">
     <div class="box">
       <p>
@@ -805,8 +806,24 @@
   </div>
 </template>
 <script>
+import Title from "@/components/Title/Title.vue";
 export default {
-  name: "GoogleAdsDesc"
+  name: "GoogleAds",
+  components:{
+    Title
+  },
+  data() {
+    return {
+      titleData: {
+        backgroundPhoto: {
+          backgroundImage:
+            "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/back9.jpg)"
+        },
+        desc: "Efektywne",
+        title: "GOOGLE ADS"
+      }
+    };
+  }
 };
 </script>
-<style scoped lang="scss" src="./GoogleAdsDesc.style.scss"></style>
+<style scoped lang="scss" src="./GoogleAds.style.scss"></style>
