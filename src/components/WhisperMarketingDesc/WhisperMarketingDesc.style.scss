@@ -1,0 +1,60 @@
+.whisper-container{
+    width:100%;
+    padding:60px 10%;
+    .whisper-desc{
+        display:flex;
+        margin-bottom:45px;
+        div{
+            width:50%;
+            padding: 15px;
+            p{
+                color: #353740;
+                line-height: 1.6em;
+                font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+                font-size:16px;
+                font-weight: 500;
+            }
+        }
+    }
+    h2{
+        font-weight: 800;
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+        color: #353740;
+        margin-bottom:45px;
+        text-align: center;
+    }
+    .whisper-info{
+        display:grid;
+        grid-template-columns: repeat(2, calc(50% - 10px));
+        gap:20px;
+        h4{
+            font-weight: 400;
+            color: #353740;
+            font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+            line-height: 1.2em;
+            font-size:24px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .whisper-container{
+        .whisper-desc{
+            flex-direction: column;
+            div{
+                width:100%;
+            }
+        }
+        h2{
+            font-size:30px;
+        }
+        .whisper-info{
+            grid-template-columns: 100%;
+            h4{
+                font-size:20px;
+            }
+        }
+    }
+}

@@ -1,19 +1,19 @@
 <template>
   <Title :groupedProps="marketing" />
-  <SocialMediaDesc/>
+  <WhisperMarketingDesc />
   <MarketingBox />
   <ContactForm />
 </template>
 <script>
 import Title from "@/components/Title/Title.vue";
-import SocialMediaDesc from "@/components/SocialMediaDesc/SocialMediaDesc.vue";
+import WhisperMarketingDesc from "@/components/WhisperMarketingDesc/WhisperMarketingDesc.vue";
 import MarketingBox from "@/components/MarketingBox/MarketingBox.vue";
 import ContactForm from "@/components/ContactForm/ContactForm.vue";
 export default {
-  name: "SocialMedia",
+  name: "WhisperMarketing",
   components: {
     Title,
-    SocialMediaDesc,
+    WhisperMarketingDesc,
     MarketingBox,
     ContactForm
   },
@@ -24,8 +24,8 @@ export default {
           backgroundImage:
             "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/back9.jpg)"
         },
-        desc: "Skuteczne",
-        title: "SOCIAL MEDIA"
+        desc: "Wiarygodny",
+        title: "MARKETING SZEPTANY"
       }
     };
   }
