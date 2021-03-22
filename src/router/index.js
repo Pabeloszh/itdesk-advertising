@@ -9,7 +9,8 @@ import CompanyBlogDesc from "../views/CompanyBlog.vue";
 import Mailing from "../views/Mailing.vue";
 import Positioning from "../views/Positioning.vue";
 import SocialMedia from "../views/SocialMedia.vue";
-import WhisperMarketing from "../views/WhisperMarketing.vue"
+import WhisperMarketing from "../views/WhisperMarketing.vue";
+import OnlineStores from "../views/OnlineStores.vue"
 
 const routes = [
   {
@@ -66,6 +67,11 @@ const routes = [
     path: "/marketing-szeptany",
     name: "WhisperMarketing",
     component: WhisperMarketing
+  },
+  {
+    path: "/strony-i-sklepy-internetowe",
+    name: "OnlineStores",
+    component: OnlineStores
   }
 ];
 
