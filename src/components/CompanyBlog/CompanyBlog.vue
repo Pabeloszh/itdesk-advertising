@@ -1,4 +1,5 @@
 <template>
+  <Title :groupedProps="titleData"/>
   <div class="blog-container">
     <div class="blog-desc">
       <div>
@@ -51,8 +52,24 @@
   </div>
 </template>
 <script>
+import Title from "@/components/Title/Title.vue"
 export default {
-  name: "CompanyBlogDesc"
+  name: "CompanyBlog",
+  components:{
+    Title
+  },
+  data(){
+    return{
+      titleData: {
+        backgroundPhoto: {
+          backgroundImage:
+            "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/back9.jpg)"
+        },
+        desc: "Interesujay",
+        title: "BLOG FIRMOWY"
+      }
+    }
+  }
 };
 </script>
-<style scoped lang="scss" src="./CompanyBlogDesc.style.scss"></style>
+<style scoped lang="scss" src="./CompanyBlog.style.scss"></style>

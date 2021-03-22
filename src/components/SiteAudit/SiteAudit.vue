@@ -1,4 +1,5 @@
 <template>
+  <Title :groupedProps="titleData" />
   <div class="saudit-container">
     <div class="saudit-desc">
       <div>
@@ -100,8 +101,24 @@
   </div>
 </template>
 <script>
+import Title from "@/components/Title/Title.vue";
 export default {
-  name: "SiteAuditDesc"
+  name: "SiteAudit",
+  components:{
+    Title,
+  },
+  data(){
+    return{
+      titleData: {
+        backgroundPhoto: {
+          backgroundImage:
+            "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/back9.jpg)"
+          },
+          desc: "Szczegółowy",
+          title: "AUDYT STRONY"
+      }
+    }
+  }
 };
 </script>
-<style scoped lang="scss" src="./SiteAuditDesc.style.scss"></style>
+<style scoped lang="scss" src="./SiteAudit.style.scss"></style>

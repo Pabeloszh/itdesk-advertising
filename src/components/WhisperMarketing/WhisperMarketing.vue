@@ -1,4 +1,5 @@
 <template>
+    <Title :groupedProps="titleData"/>
     <div class="whisper-container">
         <div class="whisper-desc">
             <div>
@@ -19,10 +20,26 @@
     </div>
 </template>
 <script>
+import Title from "@/components/Title/Title.vue"
 export default {
-    name:"WhisperMarketingDesc"
+    name:"WhisperMarketing",
+    components:{
+        Title
+    },
+    data() {
+        return {
+        titleData: {
+            backgroundPhoto: {
+            backgroundImage:
+                "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/back9.jpg)"
+            },
+            desc: "Wiarygodny",
+            title: "MARKETING SZEPTANY"
+        }
+        };
+    }
 }
 </script>
-<style scoped lang="scss" src="./WhisperMarketingDesc.style.scss">
+<style scoped lang="scss" src="./WhisperMarketing.style.scss">
 
 </style>

@@ -1,4 +1,5 @@
 <template>
+    <Title :groupedProps="titleData"/>
     <div class="scmedia-container">
         <div class="scmedia-desc">
             <div>
@@ -99,10 +100,26 @@
     </div>
 </template>
 <script>
+import Title from "@/components/Title/Title.vue"
 export default {
-    name:"SocialMediaDesc"
+    name:"SocialMedia",
+    components:{
+        Title
+    },
+    data() {
+        return {
+        titleData: {
+            backgroundPhoto: {
+            backgroundImage:
+                "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/back9.jpg)"
+            },
+            desc: "Skuteczne",
+            title: "SOCIAL MEDIA"
+        }
+        };
+    }
 }
 </script>
-<style scoped lang="scss" src="./SocialMediaDesc.style.scss">
+<style scoped lang="scss" src="./SocialMedia.style.scss">
 
 </style>

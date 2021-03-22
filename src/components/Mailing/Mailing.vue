@@ -1,4 +1,5 @@
 <template>
+    <Title :groupedProps="titleData" />
     <div class="mailing-container">
         <div class="mailing-desc">
             <div>
@@ -39,10 +40,26 @@
     </div>
 </template>
 <script>
+import Title from "@/components/Title/Title.vue";
 export default {
-    name:"MailingDesc"
+    name:"Mailing",
+    components: {
+        Title,
+    },
+    data() {
+        return {
+        titleData: {
+            backgroundPhoto: {
+            backgroundImage:
+                "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/back9.jpg)"
+            },
+            desc: "Przemyslany",
+            title: "Mailing"
+        }
+        };
+    }
 }
 </script>
-<style scoped lang="scss" src="./MailingDesc.style.scss">
+<style scoped lang="scss" src="./Mailing.style.scss">
 
 </style>
