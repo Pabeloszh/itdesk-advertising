@@ -1,0 +1,38 @@
+.oss-container{
+    width:100%;
+    padding:60px 10%;
+    .oss-title{
+        h2{
+            font-weight: 800;
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+            color: #353740; 
+            margin-bottom:30px;
+        }
+        p{
+            padding:0 6%;
+            color: #353740;
+            line-height: 1.6em;
+            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            font-size:16px;
+            margin-bottom:5px;
+        }
+    }
+}
+.second-cont{
+    background-color:#f7f7f7;
+}
+@media only screen and (max-width: 1024px){
+    .oss-container{
+        .oss-title{
+            h2{
+                font-size: 36px;
+            }
+            p{
+                padding:0;
+                font-size:16px;
+            }
+        }
+    }
+}

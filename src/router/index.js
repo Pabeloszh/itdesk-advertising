@@ -12,6 +12,7 @@ import Positioning from "@/components/Positioning/Positioning.vue";
 import SocialMedia from "@/components/SocialMedia/SocialMedia.vue";
 import WhisperMarketing from "@/components/WhisperMarketing/WhisperMarketing.vue";
 import OnlineStores from "../views/OnlineStores.vue"
+import OnlineSitesStores from "@/components/OnlineSitesStores/OnlineSitesStores.vue"
 
 const routes = [
   {
@@ -78,9 +79,16 @@ const routes = [
     ]
   },
   {
-    path: "/strony-i-sklepy-internetowe",
+    path: "/strony-sklepy-internetowe",
     name: "OnlineStores",
-    component: OnlineStores
+    component: OnlineStores,
+    children: [
+      {
+        path: "/strony-i-sklepy-internetowe",
+        name: "OnlineSitesStores",
+        component: OnlineSitesStores
+      },  
+    ]
   }
 ];
 

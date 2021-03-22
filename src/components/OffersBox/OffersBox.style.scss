@@ -2,7 +2,6 @@
     padding: 60px 10%;
     display:grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 445px 445px 445px;
     text-align:center;
 
     .box{
@@ -64,7 +63,6 @@
 @media only screen and (max-width: 1024px){
     .off-box{
         grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(4, 445px);
         .box:nth-child(1){
             border-right:1px dotted #ef7a07;
             border-bottom:1px dotted #ef7a07;
@@ -100,7 +98,6 @@
 @media only screen and (max-width: 768px){
     .off-box{
         grid-template-columns: 100%;
-        grid-template-rows: repeat(8, 600px);
         .box:nth-child(1){
             border-right:none;
             border-bottom:1px dotted #ef7a07;
