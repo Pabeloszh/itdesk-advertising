@@ -8,24 +8,24 @@
     </div>
     <div class="nav">
       <div>
-        <a href="">AGENCJA MARKETINGOWA</a>
+        <router-link to="/">AGENCJA MARKETINGOWA</router-link>
       </div>
       <div class="dropdown">
-        <a href="">OFERTA <i class="fas fa-caret-down"></i></a>
+        <router-link to="/uslugi">OFERTA <i class="fas fa-caret-down"></i></router-link>
         <div class="offers-dropdown">
           <div>
-            <a href="">MARKETING<br />INTERNETOWY</a>
-            <a href="">OPIEKA MARKETINGOWA</a>
-            <a href="">GOOGLE ADS</a>
-            <a href="">AUDYT STRONY</a>
-            <a href="">BLOG FIRMOWY</a>
-            <a href="">MAILING</a>
-            <a href="">POZYCJONOWANIE</a>
-            <a href="">SOCIAL MEDIA</a>
-            <a href="">MARKETING SZEPTANY</a>
+            <router-link to="/marketing-internetowy">MARKETING<br />INTERNETOWY</router-link>
+            <router-link to="/opieka-marketingowa">OPIEKA MARKETINGOWA</router-link>
+            <router-link to="/google-ads">GOOGLE ADS</router-link>
+            <router-link to="/audyt-strony-internetowej">AUDYT STRONY</router-link>
+            <router-link to="/blog-firmowy">BLOG FIRMOWY</router-link>
+            <router-link to="/mailing">MAILING</router-link>
+            <router-link to="/pozycjonowanie">POZYCJONOWANIE</router-link>
+            <router-link to="/social-media">SOCIAL MEDIA</router-link>
+            <router-link to="/marketing-szeptany">MARKETING SZEPTANY</router-link>
           </div>
           <div>
-            <a href="">STRONY I SKLEPY<br />INTERNETOWE</a>
+            <router-link to="/strony-i-sklepy-internetowe">STRONY I SKLEPY<br />INTERNETOWE</router-link>
             <a href="">SYSTEMY ZARZĄDZANIA<br />TREŚCIĄ CMS</a>
             <a href="">STRONY INTERNETOWE</a>
             <a href="">OPIEKA NAD STRONĄ<br />WWW</a>
