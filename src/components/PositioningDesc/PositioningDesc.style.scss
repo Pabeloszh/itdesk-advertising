@@ -1,0 +1,33 @@
+.positioning-container{
+    width:100%;
+    padding: 60px 10%;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 30px;
+    row-gap:30px;
+    margin-bottom:45px;
+    div{
+        h3{
+            font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+            color: #353740;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 1.2em;
+            font-size:28px;
+            margin-bottom:15px;
+        }
+        p{
+            color: #353740;
+            line-height: 1.6em;
+            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            font-size:16px;
+            font-weight: 500;
+        }
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .positioning-container{
+        grid-template-columns: 100%;
+    }
+}
