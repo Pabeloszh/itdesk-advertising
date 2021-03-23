@@ -14,6 +14,7 @@ import WhisperMarketing from "@/components/WhisperMarketing/WhisperMarketing.vue
 import OnlineStores from "../views/OnlineStores.vue"
 import OnlineSitesStores from "@/components/OnlineSitesStores/OnlineSitesStores.vue"
 import Cms from "@/components/Cms/Cms.vue"
+import Websites from "@/components/Websites/Websites.vue"
 
 const routes = [
   {
@@ -93,6 +94,11 @@ const routes = [
         path: "/systemy-zarzadzania-trescia-cms",
         name: "Cms",
         component: Cms
+      }, 
+      {
+        path: "/strony-internetowe",
+        name: "Websites",
+        component: Websites
       }, 
     ]
   }
