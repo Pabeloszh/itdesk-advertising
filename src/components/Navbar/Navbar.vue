@@ -49,7 +49,7 @@
             >
             <router-link to="/sklep-sote">SOTE SHOP</router-link>
             <router-link to="/sklep-presta">PRESTA SHOP</router-link>
-            <router-link to="magento">MAGENTO</router-link>
+            <router-link to="/sklep-magento">MAGENTO</router-link>
           </div>
           <div>
             <a href="">OPROGRAMOWANIE<br />DEDYKOWANE</a>

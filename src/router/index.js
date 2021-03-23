@@ -18,6 +18,7 @@ import Websites from "@/components/Websites/Websites.vue";
 import WebsiteMaintenance from "@/components/WebsiteMaintenance/WebsiteMaintenance.vue";
 import SoteShop from "@/components/SoteShop/SoteShop.vue";
 import PrestaShop from "@/components/PrestaShop/PrestaShop.vue";
+import Magento from "@/components/Magento/Magento.vue";
 
 
 const routes = [
@@ -118,6 +119,11 @@ const routes = [
         path: "/sklep-presta/",
         name: "PrestaShop",
         component: PrestaShop
+      },
+      {
+        path: "/sklep-magento/",
+        name: "Magento",
+        component: Magento
       }
     ]
   }
