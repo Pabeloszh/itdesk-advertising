@@ -17,6 +17,8 @@ import Cms from "@/components/Cms/Cms.vue";
 import Websites from "@/components/Websites/Websites.vue";
 import WebsiteMaintenance from "@/components/WebsiteMaintenance/WebsiteMaintenance.vue";
 import SoteShop from "@/components/SoteShop/SoteShop.vue";
+import PrestaShop from "@/components/PrestaShop/PrestaShop.vue";
+
 
 const routes = [
   {
@@ -111,6 +113,11 @@ const routes = [
         path: "/sklep-sote/",
         name: "SoteShop",
         component: SoteShop
+      },
+      {
+        path: "/sklep-presta/",
+        name: "PrestaShop",
+        component: PrestaShop
       }
     ]
   }
