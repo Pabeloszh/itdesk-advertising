@@ -1,4 +1,4 @@
-.pshop-desc{
+.mshop-desc{
     width:100%;
     padding: 60px 10%;
     p{
@@ -10,7 +10,7 @@
         font-size:18px;
         margin-bottom:20px;
     }
-    .pshop-box{
+    .mshop-box{
         display:flex;
         div{
             width:50%;
@@ -42,11 +42,11 @@
 }
 
 @media only screen and (max-width: 1024px){
-    .pshop-desc{
+    .mshop-desc{
         p{
             margin-bottom:45px;
         }
-        .pshop-box{
+        .mshop-box{
             flex-direction: column;
             div{
                 width:100%;
