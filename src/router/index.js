@@ -19,6 +19,8 @@ import WebsiteMaintenance from "@/components/WebsiteMaintenance/WebsiteMaintenan
 import SoteShop from "@/components/SoteShop/SoteShop.vue";
 import PrestaShop from "@/components/PrestaShop/PrestaShop.vue";
 import Magento from "@/components/Magento/Magento.vue";
+import Software from "../views/Software.vue";
+import DedicatedSoftware from "@/components/DedicatedSoftware/DedicatedSoftware.vue"
 
 
 const routes = [
@@ -125,6 +127,18 @@ const routes = [
         name: "Magento",
         component: Magento
       }
+    ]
+  },
+  {
+    path: "/oprogramowanie",
+    name: "Software",
+    component: Software,
+    children: [
+      {
+        path: "/oprogramowanie-dedykowane/",
+        name: "DedicatedSoftware",
+        component: DedicatedSoftware
+      },
     ]
   }
 ];

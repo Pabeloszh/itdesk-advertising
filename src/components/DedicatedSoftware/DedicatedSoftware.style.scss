@@ -1,0 +1,86 @@
+.dsoft-desc{
+    width:100%;
+    padding:60px 10%;
+    p{
+        max-width:800px;
+        color: #353740;
+        line-height: 1.6em;
+        font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+        font-size:18px;
+        margin-bottom:45px;
+        font-weight: 500;
+    }
+    .dsoft-box{
+        display:grid;
+        grid-template-columns: repeat(2,50%);
+        gap:30px;
+        row-gap: 45px;
+        .box{
+            padding:45px;
+            border: 1px dotted #ef7a07;
+            text-align:center;
+            div{
+                border-bottom: 1px dotted #ef7a07;
+                padding-bottom: 30px;
+                margin-bottom:45px;
+                img{
+                    margin:auto;
+                    width: 300px;
+                }
+            }
+            h2{
+                height:140px;
+                border-bottom: 1px dotted #ef7a07;
+                padding-bottom: 30px;
+                margin-bottom:45px;
+                font-weight: 800;
+                font-size: 32px;
+                color: #353740;
+                font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+            }
+            h2, h3, p, li{
+                text-align: left;
+            }
+            h3{
+                font-weight: 500;
+                font-size: 22px;
+                color: #353740;
+                font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+                margin-bottom:20px;
+            }
+            p, li{
+                font-weight: 500;
+                font-size:16px;
+                color: #353740;
+                line-height: 1.6em;
+                font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            }
+            ul{
+                padding: 0 0 15px 15px;
+                li{
+                    margin-bottom:5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .dsoft-desc{
+        .dsoft-box{
+            grid-template-columns: 100%;
+            .box{
+                padding:35px;
+                div{
+                    padding-bottom: 30px;
+                    margin-bottom:45px;
+                    img{
+                        margin:auto;
+                        width: 200px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
