@@ -1,5 +1,5 @@
 <template>
-  <Title :groupedProps="titleData"/>
+  <Title :groupedProps="titleData" />
   <div class="mdesc-container">
     <div class="mdesc-title">
       <h5>Marketing internetowy</h5>
@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import Title from "@/components/Title/Title.vue"
+import Title from "@/components/Title/Title.vue";
 export default {
   name: "InternetMarketing",
   components: {

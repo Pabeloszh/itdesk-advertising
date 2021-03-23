@@ -104,20 +104,20 @@
 import Title from "@/components/Title/Title.vue";
 export default {
   name: "SiteAudit",
-  components:{
-    Title,
+  components: {
+    Title
   },
-  data(){
-    return{
+  data() {
+    return {
       titleData: {
         backgroundPhoto: {
           backgroundImage:
             "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/back9.jpg)"
-          },
-          desc: "Szczegółowy",
-          title: "AUDYT STRONY"
+        },
+        desc: "Szczegółowy",
+        title: "AUDYT STRONY"
       }
-    }
+    };
   }
 };
 </script>

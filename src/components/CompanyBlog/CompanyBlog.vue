@@ -1,5 +1,5 @@
 <template>
-  <Title :groupedProps="titleData"/>
+  <Title :groupedProps="titleData" />
   <div class="blog-container">
     <div class="blog-desc">
       <div>
@@ -52,14 +52,14 @@
   </div>
 </template>
 <script>
-import Title from "@/components/Title/Title.vue"
+import Title from "@/components/Title/Title.vue";
 export default {
   name: "CompanyBlog",
-  components:{
+  components: {
     Title
   },
-  data(){
-    return{
+  data() {
+    return {
       titleData: {
         backgroundPhoto: {
           backgroundImage:
@@ -68,7 +68,7 @@ export default {
         desc: "Interesujay",
         title: "BLOG FIRMOWY"
       }
-    }
+    };
   }
 };
 </script>

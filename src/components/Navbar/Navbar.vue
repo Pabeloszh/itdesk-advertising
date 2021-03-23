@@ -11,27 +11,45 @@
         <router-link to="/">AGENCJA MARKETINGOWA</router-link>
       </div>
       <div class="dropdown">
-        <router-link to="/uslugi">OFERTA <i class="fas fa-caret-down"></i></router-link>
+        <router-link to="/uslugi"
+          >OFERTA <i class="fas fa-caret-down"></i
+        ></router-link>
         <div class="offers-dropdown">
           <div>
-            <router-link to="/marketing-internetowy">MARKETING<br />INTERNETOWY</router-link>
-            <router-link to="/opieka-marketingowa">OPIEKA MARKETINGOWA</router-link>
+            <router-link to="/marketing-internetowy"
+              >MARKETING<br />INTERNETOWY</router-link
+            >
+            <router-link to="/opieka-marketingowa"
+              >OPIEKA MARKETINGOWA</router-link
+            >
             <router-link to="/google-ads">GOOGLE ADS</router-link>
-            <router-link to="/audyt-strony-internetowej">AUDYT STRONY</router-link>
+            <router-link to="/audyt-strony-internetowej"
+              >AUDYT STRONY</router-link
+            >
             <router-link to="/blog-firmowy">BLOG FIRMOWY</router-link>
             <router-link to="/mailing">MAILING</router-link>
             <router-link to="/pozycjonowanie">POZYCJONOWANIE</router-link>
             <router-link to="/social-media">SOCIAL MEDIA</router-link>
-            <router-link to="/marketing-szeptany">MARKETING SZEPTANY</router-link>
+            <router-link to="/marketing-szeptany"
+              >MARKETING SZEPTANY</router-link
+            >
           </div>
           <div>
-            <router-link to="/strony-i-sklepy-internetowe">STRONY I SKLEPY<br />INTERNETOWE</router-link>
-            <router-link to="/systemy-zarzadzania-trescia-cms">SYSTEMY ZARZĄDZANIA<br />TREŚCIĄ CMS</router-link>
-            <router-link to="/strony-internetowe">STRONY INTERNETOWE</router-link>
-            <router-link to="/opieka-nad-strona-www">OPIEKA NAD STRONĄ<br />WWW</router-link>
-            <a href="">SOTE SHOP</a>
-            <a href="">PRESTA SHOP</a>
-            <a href="">MAGENTO</a>
+            <router-link to="/strony-i-sklepy-internetowe"
+              >STRONY I SKLEPY<br />INTERNETOWE</router-link
+            >
+            <router-link to="/systemy-zarzadzania-trescia-cms"
+              >SYSTEMY ZARZĄDZANIA<br />TREŚCIĄ CMS</router-link
+            >
+            <router-link to="/strony-internetowe"
+              >STRONY INTERNETOWE</router-link
+            >
+            <router-link to="/opieka-nad-strona-www"
+              >OPIEKA NAD STRONĄ<br />WWW</router-link
+            >
+            <router-link to="/sklep-sote">SOTE SHOP</router-link>
+            <router-link to="/sklep-presta">PRESTA SHOP</router-link>
+            <router-link to="magento">MAGENTO</router-link>
           </div>
           <div>
             <a href="">OPROGRAMOWANIE<br />DEDYKOWANE</a>
