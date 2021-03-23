@@ -15,6 +15,7 @@ import OnlineStores from "../views/OnlineStores.vue"
 import OnlineSitesStores from "@/components/OnlineSitesStores/OnlineSitesStores.vue"
 import Cms from "@/components/Cms/Cms.vue"
 import Websites from "@/components/Websites/Websites.vue"
+import WebsiteMaintenance from "@/components/WebsiteMaintenance/WebsiteMaintenance.vue"
 
 const routes = [
   {
@@ -99,6 +100,11 @@ const routes = [
         path: "/strony-internetowe",
         name: "Websites",
         component: Websites
+      },
+      {
+        path: "/opieka-nad-strona-www/",
+        name: "WebsiteMaintenance",
+        component: WebsiteMaintenance
       }, 
     ]
   }
