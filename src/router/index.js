@@ -11,11 +11,12 @@ import Mailing from "@/components/Mailing/Mailing.vue";
 import Positioning from "@/components/Positioning/Positioning.vue";
 import SocialMedia from "@/components/SocialMedia/SocialMedia.vue";
 import WhisperMarketing from "@/components/WhisperMarketing/WhisperMarketing.vue";
-import OnlineStores from "../views/OnlineStores.vue"
-import OnlineSitesStores from "@/components/OnlineSitesStores/OnlineSitesStores.vue"
-import Cms from "@/components/Cms/Cms.vue"
-import Websites from "@/components/Websites/Websites.vue"
-import WebsiteMaintenance from "@/components/WebsiteMaintenance/WebsiteMaintenance.vue"
+import OnlineStores from "../views/OnlineStores.vue";
+import OnlineSitesStores from "@/components/OnlineSitesStores/OnlineSitesStores.vue";
+import Cms from "@/components/Cms/Cms.vue";
+import Websites from "@/components/Websites/Websites.vue";
+import WebsiteMaintenance from "@/components/WebsiteMaintenance/WebsiteMaintenance.vue";
+import SoteShop from "@/components/SoteShop/SoteShop.vue";
 
 const routes = [
   {
@@ -78,7 +79,7 @@ const routes = [
         path: "/marketing-szeptany",
         name: "WhisperMarketing",
         component: WhisperMarketing
-      },
+      }
     ]
   },
   {
@@ -90,12 +91,12 @@ const routes = [
         path: "/strony-i-sklepy-internetowe",
         name: "OnlineSitesStores",
         component: OnlineSitesStores
-      },  
+      },
       {
         path: "/systemy-zarzadzania-trescia-cms",
         name: "Cms",
         component: Cms
-      }, 
+      },
       {
         path: "/strony-internetowe",
         name: "Websites",
@@ -105,7 +106,12 @@ const routes = [
         path: "/opieka-nad-strona-www/",
         name: "WebsiteMaintenance",
         component: WebsiteMaintenance
-      }, 
+      },
+      {
+        path: "/sklep-sote/",
+        name: "SoteShop",
+        component: SoteShop
+      }
     ]
   }
 ];

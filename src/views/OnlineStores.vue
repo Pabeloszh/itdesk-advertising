@@ -8,6 +8,6 @@ export default {
   name: "OnlineStores",
   components: {
     ContactForm
-  },
-}
+  }
+};
 </script>

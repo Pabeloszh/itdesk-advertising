@@ -129,7 +129,7 @@
 import Title from "@/components/Title/Title.vue";
 export default {
   name: "MarketingCare",
-  components:{
+  components: {
     Title
   },
   data() {

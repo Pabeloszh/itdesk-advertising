@@ -1,5 +1,5 @@
 <template>
-  <Title :groupedProps="titleData"/>
+  <Title :groupedProps="titleData" />
   <div class="gads-desc">
     <div class="box">
       <p>
@@ -809,7 +809,7 @@
 import Title from "@/components/Title/Title.vue";
 export default {
   name: "GoogleAds",
-  components:{
+  components: {
     Title
   },
   data() {
