@@ -26,9 +26,9 @@
           </div>
           <div>
             <router-link to="/strony-i-sklepy-internetowe">STRONY I SKLEPY<br />INTERNETOWE</router-link>
-            <a href="">SYSTEMY ZARZĄDZANIA<br />TREŚCIĄ CMS</a>
-            <a href="">STRONY INTERNETOWE</a>
-            <a href="">OPIEKA NAD STRONĄ<br />WWW</a>
+            <router-link to="/systemy-zarzadzania-trescia-cms">SYSTEMY ZARZĄDZANIA<br />TREŚCIĄ CMS</router-link>
+            <router-link to="/strony-internetowe">STRONY INTERNETOWE</router-link>
+            <router-link to="/opieka-nad-strona-www">OPIEKA NAD STRONĄ<br />WWW</router-link>
             <a href="">SOTE SHOP</a>
             <a href="">PRESTA SHOP</a>
             <a href="">MAGENTO</a>
