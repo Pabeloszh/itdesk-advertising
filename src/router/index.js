@@ -20,11 +20,11 @@ import SoteShop from "@/components/SoteShop/SoteShop.vue";
 import PrestaShop from "@/components/PrestaShop/PrestaShop.vue";
 import Magento from "@/components/Magento/Magento.vue";
 import Software from "../views/Software.vue";
-import DedicatedSoftware from "@/components/DedicatedSoftware/DedicatedSoftware.vue"
-import Hosting from "@/components/Hosting/Hosting.vue"
+import DedicatedSoftware from "@/components/DedicatedSoftware/DedicatedSoftware.vue";
+import Hosting from "@/components/Hosting/Hosting.vue";
 import MobileApps from "@/components/MobileApps/MobileApps.vue";
-import VideoMarketing from "@/components/VideoMarketing/VideoMarketing.vue"
-import Cloud from "@/components/Cloud/Cloud.vue"
+import VideoMarketing from "@/components/VideoMarketing/VideoMarketing.vue";
+import Cloud from "@/components/Cloud/Cloud.vue";
 
 const routes = [
   {
@@ -161,7 +161,7 @@ const routes = [
         path: "/uslugi-w-chmurze",
         name: "Cloud",
         component: Cloud
-      },
+      }
     ]
   }
 ];
