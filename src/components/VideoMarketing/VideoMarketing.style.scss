@@ -1,0 +1,75 @@
+.vmark-desc{
+    background-color:#000;
+    display:flex;
+    align-items: center;
+    div{
+        width:50%;
+        img{
+            height:572px;
+        }
+        p{
+            text-align: left;
+            font-size:18px;
+            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            font-weight: 500;
+            color: #fff;
+            line-height: 1.6em;
+            margin-bottom: 30px;
+        }
+    }
+    div:last-child{
+        padding: 0px 10%;
+
+    }
+}
+.vmark-profit{
+    width:100%;
+    padding:60px 10%;
+    h2{
+        text-align: center;
+        font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 1em;
+        color: #1a1a1a;
+        margin-bottom:45px;
+    }
+    div{
+        display:grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 30px;
+        p{
+            color: #353740;
+            line-height: 1.6em;
+            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            font-size:18px;
+            margin-bottom:20px;
+            font-weight: 500;
+        }
+    }
+}
+@media only screen and (max-width:1024px){
+    .vmark-desc{
+        flex-direction:column;
+        div{
+            width:100%;
+            img{
+                max-width: 100%;
+                height:auto;
+                margin-bottom: 20px;
+            }
+        }
+        div:last-child{
+            padding: 60px 10%;
+    
+        }
+    }
+    .vmark-profit{
+        h2{
+            font-size:36px;
+        }
+        div{
+            grid-template-columns: 100%;
+        }
+    }
+}
