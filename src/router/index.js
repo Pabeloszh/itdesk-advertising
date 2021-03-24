@@ -24,6 +24,7 @@ import DedicatedSoftware from "@/components/DedicatedSoftware/DedicatedSoftware.
 import Hosting from "@/components/Hosting/Hosting.vue"
 import MobileApps from "@/components/MobileApps/MobileApps.vue";
 import VideoMarketing from "@/components/VideoMarketing/VideoMarketing.vue"
+import Cloud from "@/components/Cloud/Cloud.vue"
 
 const routes = [
   {
@@ -155,6 +156,11 @@ const routes = [
         path: "/wideomarketing",
         name: "VideoMarketing",
         component: VideoMarketing
+      },
+      {
+        path: "/uslugi-w-chmurze",
+        name: "Cloud",
+        component: Cloud
       },
     ]
   }
