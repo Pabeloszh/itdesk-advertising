@@ -52,7 +52,9 @@
             <router-link to="/sklep-magento">MAGENTO</router-link>
           </div>
           <div>
-            <router-link to="/oprogramowanie-dedykowane">OPROGRAMOWANIE<br />DEDYKOWANE</router-link>
+            <router-link to="/oprogramowanie-dedykowane"
+              >OPROGRAMOWANIE<br />DEDYKOWANE</router-link
+            >
             <router-link to="/hosting-i-domeny">HOSTING I DOMENY</router-link>
             <router-link to="/aplikacje-mobilne">APLIKACJE MOBILNE</router-link>
             <router-link to="/wideomarketing">WIDEOMARKETING</router-link>
