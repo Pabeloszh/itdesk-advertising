@@ -22,7 +22,8 @@ import Magento from "@/components/Magento/Magento.vue";
 import Software from "../views/Software.vue";
 import DedicatedSoftware from "@/components/DedicatedSoftware/DedicatedSoftware.vue"
 import Hosting from "@/components/Hosting/Hosting.vue"
-import MobileApps from "@/components/MobileApps/MobileApps.vue"
+import MobileApps from "@/components/MobileApps/MobileApps.vue";
+import VideoMarketing from "@/components/VideoMarketing/VideoMarketing.vue"
 
 const routes = [
   {
@@ -149,6 +150,11 @@ const routes = [
         path: "/aplikacje-mobilne",
         name: "MobileApps",
         component: MobileApps
+      },
+      {
+        path: "/wideomarketing",
+        name: "VideoMarketing",
+        component: VideoMarketing
       },
     ]
   }
