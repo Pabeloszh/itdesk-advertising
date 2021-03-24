@@ -1,0 +1,55 @@
+.cloud-desc{
+    width:100%;
+    padding: 60px 10%;
+    .text{
+        display:flex;
+        margin-bottom:15px;
+        p, div{
+            width:33.3%;
+            padding:15px;
+            img{
+                max-width: 100%;
+            }
+        }
+        p{
+            padding-left:0;
+            color: #353740;
+            line-height: 1.4em;
+            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            font-size:16px;
+            // margin-bottom:20px;
+            font-weight: 500;
+        }
+        div{
+            text-align: center;
+        }
+        div:last-child{
+            img{
+                height:80px
+            }
+        }
+    }
+    p{
+        color: #353740;
+        line-height: 1.4em;
+        font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+        font-size:16px;
+        margin-bottom:20px;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .cloud-desc{
+        .text{
+            flex-direction: column;
+            p, div{
+                width:100%;
+                padding:0;
+            }
+            div{
+                margin-bottom:20px;
+            }
+        }
+    }
+}
