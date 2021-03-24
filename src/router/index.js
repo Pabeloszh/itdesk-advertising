@@ -21,7 +21,7 @@ import PrestaShop from "@/components/PrestaShop/PrestaShop.vue";
 import Magento from "@/components/Magento/Magento.vue";
 import Software from "../views/Software.vue";
 import DedicatedSoftware from "@/components/DedicatedSoftware/DedicatedSoftware.vue"
-
+import Hosting from "@/components/Hosting/Hosting.vue"
 
 const routes = [
   {
@@ -135,9 +135,14 @@ const routes = [
     component: Software,
     children: [
       {
-        path: "/oprogramowanie-dedykowane/",
+        path: "/oprogramowanie-dedykowane",
         name: "DedicatedSoftware",
         component: DedicatedSoftware
+      },
+      {
+        path: "/hosting-i-domeny",
+        name: "Hosting",
+        component: Hosting
       },
     ]
   }
