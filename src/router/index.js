@@ -25,6 +25,7 @@ import Hosting from "@/components/Hosting/Hosting.vue";
 import MobileApps from "@/components/MobileApps/MobileApps.vue";
 import VideoMarketing from "@/components/VideoMarketing/VideoMarketing.vue";
 import Cloud from "@/components/Cloud/Cloud.vue";
+import Training from "@/components/Training/Training.vue";
 
 const routes = [
   {
@@ -161,6 +162,11 @@ const routes = [
         path: "/uslugi-w-chmurze",
         name: "Cloud",
         component: Cloud
+      },
+      {
+        path: "/szkolenia",
+        name: "Training",
+        component: Training
       }
     ]
   }
