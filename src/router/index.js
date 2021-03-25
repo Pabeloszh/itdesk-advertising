@@ -26,6 +26,7 @@ import MobileApps from "@/components/MobileApps/MobileApps.vue";
 import VideoMarketing from "@/components/VideoMarketing/VideoMarketing.vue";
 import Cloud from "@/components/Cloud/Cloud.vue";
 import Training from "@/components/Training/Training.vue";
+import OurBlog from "@/components/OurBlog/OurBlog.vue"
 
 const routes = [
   {
@@ -169,6 +170,11 @@ const routes = [
         component: Training
       }
     ]
+  },
+  {
+    path: "/blog",
+    name: "OurBlog",
+    component: OurBlog,
   }
 ];
 
