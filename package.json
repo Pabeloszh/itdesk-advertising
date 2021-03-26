@@ -11,6 +11,8 @@
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
+    "vue2-google-maps": "^0.10.7",
+    "vuejs-google-maps": "0.0.13",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {

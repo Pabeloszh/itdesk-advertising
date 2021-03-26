@@ -18,10 +18,32 @@
             color:#999;
             font-size: 70px;
             font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
-            font-weight: 1000;
+            font-weight: 800;
             letter-spacing: 2px;
             line-height: 1em;
             margin-bottom:10px;
+        }
+        h5{
+            color:#fff;
+            font-size: 40px;
+            font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+            font-weight: 500;
+            letter-spacing: 2px;
+            line-height: 1em;
+            margin-bottom:10px;
+            a{
+                color:#fff !important;
+                text-decoration:none;
+            }
+        }
+        h5:last-child{
+            margin-bottom:30px;
+        }
+        p{
+            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            line-height: 1.6em;
+            font-size:16px;
+            color:#fff;
         }
     }
 }
@@ -39,17 +61,20 @@
             h4{
                 color:#EF7A07;
                 font-family: 'Kristi', cursive;
-                font-size:40px;
+                font-size:40px !important;
                 font-weight: 500;
                 margin-bottom:-20px;
             }
             h2{
                 color:#999;
-                font-size: 36px;
+                font-size: 36px !important;
                 font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
                 font-weight: 1000;
                 letter-spacing: 2px;
                 line-height: 1em;
+            }
+            h5{
+                font-size:26px;
             }
         }
     }
@@ -58,10 +83,10 @@
     .title-container{
         .title-title{
             h4{
-                font-size:35px;
+                font-size:35px !important;
             }
             h2{
-                font-size: 30px;
+                font-size: 30px !important;
             }
         }
     }
