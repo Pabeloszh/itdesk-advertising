@@ -1,0 +1,74 @@
+.contact-container{
+    width:100%;
+    display:flex;
+    div{
+        width:60%;
+    }
+    div:nth-child(1){
+        background-color:#f7f7f7;
+        padding: 5% 2%;
+        text-align: center;
+        width:40%;
+        h2{
+            color:#353740;
+            font-size: 50px;
+            font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+            font-weight: 800;
+            letter-spacing: 2px;
+            line-height: 1.1em;
+            margin-bottom:5px;
+        }
+        p{
+            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            font-weight: 300;
+            font-size: 24px;
+            color:#353740;
+            line-height: 1em;
+        }
+        form{
+            input, select, textarea{
+                width:100%;
+                padding:16px;
+                border:none;
+                border-bottom: 1px solid #bbb;
+                font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+                font-size: 16px;
+                box-shadow: inset 0px -1px 0px 0px #00000019;
+                color: #353740;
+                background-color:transparent;
+                margin: 10px;
+                outline:none;
+            }
+            input::placeholder{
+                color: #353740;
+            }
+            select, textarea{
+                margin: 10px 0;
+            }
+            textarea{
+                margin-bottom:60px;
+            }
+            input:nth-child(4){
+                width:250px;
+                background-color:#EF7A07;
+                border-radius: 3px;
+                letter-spacing: 2px;
+                font-size: 14px;
+                font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif!important;
+                font-weight: 600!important;
+                padding: 15px 30px;
+                color:#fff;
+                margin: 0 calc(50% - 110px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .contact-container{
+        flex-direction: column;
+        div, div:nth-child(1){
+            width:100%;
+        }
+    }
+}

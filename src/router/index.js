@@ -26,8 +26,9 @@ import MobileApps from "@/components/MobileApps/MobileApps.vue";
 import VideoMarketing from "@/components/VideoMarketing/VideoMarketing.vue";
 import Cloud from "@/components/Cloud/Cloud.vue";
 import Training from "@/components/Training/Training.vue";
-import OurBlog from "@/components/OurBlog/OurBlog.vue"
-import AboutCompany from "@/components/AboutCompany/AboutCompany.vue"
+import OurBlog from "@/components/OurBlog/OurBlog.vue";
+import AboutCompany from "@/components/AboutCompany/AboutCompany.vue";
+import Contact from "@/components/Contact/Contact.vue"
 
 const routes = [
   {
@@ -181,7 +182,12 @@ const routes = [
     path: "/o-firmie",
     name: "AboutCompany",
     component: AboutCompany,
-  }
+  },
+  {
+    path: "/kontakt",
+    name: "Contact",
+    component: Contact,
+  },
 ];
 
 const router = createRouter({
