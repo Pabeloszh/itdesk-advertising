@@ -64,19 +64,19 @@
         </div>
       </div>
       <div>
-        <a href="">BLOG</a>
+        <router-link to="/blog">BLOG</router-link>
       </div>
       <div>
-        <a href="">KIM JESTEŚMY</a>
+        <router-link to="/o-firmie">KIM JESTEŚMY</router-link>
       </div>
       <div>
-        <a href="">PORTFOLIO</a>
+        <router-link to="/portfolio">PORTFOLIO</router-link>
       </div>
       <div>
-        <a href="">KONTAKT</a>
+        <router-link to="/kontakt">KONTAKT</router-link>
       </div>
       <div>
-        <a href="">WYCENA</a>
+        <router-link to="/wycena">WYCENA</router-link>
       </div>
     </div>
     <div class="mobile-button" @click="toggleMenu">
@@ -88,43 +88,43 @@
     class="mobile-nav"
     :style="menuToggler ? 'display:flex' : 'display:none'"
   >
-    <a href="">Agencja Marketingowa</a>
-    <a href="">Oferta</a>
+    <router-link to="/">Agencja Marketingowa</router-link>
+    <router-link to="/uslugi">Oferta</router-link>
     <div class="mobile-offers">
-      <a href="">Marketing internetowy</a>
+      <router-link to="/marketing-internetowy">Marketing internetowy</router-link>
       <div>
-        <a href="">Opieka marketingowa</a>
-        <a href="">Google Ads</a>
-        <a href="">Audyt Strony</a>
-        <a href="">Blog firmowy</a>
-        <a href="">Mailing</a>
-        <a href="">Pozycjonowanie</a>
-        <a href="">Social Media</a>
-        <a href="">Marketing Szeptany</a>
+        <router-link to="/opieka-marketingowa">Opieka marketingowa</router-link>
+        <router-link to="/google-ads">Google Ads</router-link>
+        <router-link to="/audyt-strony-internetowej">Audyt Strony</router-link>
+        <router-link to="/blog-firmowy">Blog firmowy</router-link>
+        <router-link to="/mailing">Mailing</router-link>
+        <router-link to="/pozycjonowanie">Pozycjonowanie</router-link>
+        <router-link to="/social-media">Social Media</router-link>
+        <router-link to="/marketing-szeptany">Marketing Szeptany</router-link>
       </div>
-      <a href="">Strony i sklepy internetowe</a>
+      <router-link to="/strony-i-sklepy-internetowe">Strony i sklepy internetowe</router-link>
       <div>
-        <a href="">Systemy zarządzania treścią CMS</a>
-        <a href="">Strony internetowe</a>
-        <a href="">Opieka nad stroną WWW</a>
-        <a href="">Sote Shop</a>
-        <a href="">Presta Shop</a>
-        <a href="">Magento</a>
+        <router-link to="/systemy-zarzadzania-trescia-cms">Systemy zarządzania treścią CMS</router-link>
+        <router-link to="/strony-internetowe">Strony internetowe</router-link>
+        <router-link to="/opieka-nad-strona-www">Opieka nad stroną WWW</router-link>
+        <router-link to="/sklep-sote">Sote Shop</router-link>
+        <router-link to="/sklep-presta">Presta Shop</router-link>
+        <router-link to="/sklep-magento">Magento</router-link>
       </div>
-      <a href="">Oprogramowanie dedykowane</a>
+      <router-link to="/oprogramowanie-dedykowane">Oprogramowanie dedykowane</router-link>
       <div>
-        <a href="">Hosting i domeny</a>
-        <a href="">Aplikacje Mobilne</a>
-        <a href="">Wideomarketing</a>
-        <a href="">Usługi w chmurze</a>
-        <a href="">Szkolenia</a>
+        <router-link to="/hosting-i-domeny">Hosting i domeny</router-link>
+        <router-link to="/aplikacje-mobilne">Aplikacje Mobilne</router-link>
+        <router-link to="/wideomarketing">Wideomarketing</router-link>
+        <router-link to="/uslugi-w-chmurze">Usługi w chmurze</router-link>
+        <router-link to="/szkolenia">Szkolenia</router-link>
       </div>
     </div>
-    <a href="">Blog</a>
-    <a href="">Kim jesteśmy</a>
-    <a href="">Portfolio</a>
-    <a href="">Kontakt</a>
-    <a href="">Wycena</a>
+    <router-link to="/blog">Blog</router-link>
+    <router-link to="/o-firmie">Kim jesteśmy</router-link>
+    <router-link to="/portfolio">Portfolio</router-link>
+    <router-link to="/kontakt">Kontakt</router-link>
+    <router-link to="/wycena">Wycena</router-link>
   </div>
 </template>
 
