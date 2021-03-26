@@ -29,6 +29,7 @@ import Training from "@/components/Training/Training.vue";
 import OurBlog from "@/components/OurBlog/OurBlog.vue";
 import AboutCompany from "@/components/AboutCompany/AboutCompany.vue";
 import Contact from "@/components/Contact/Contact.vue"
+import ContactForm from "@/components/ContactForm/ContactForm.vue"
 
 const routes = [
   {
@@ -187,6 +188,11 @@ const routes = [
     path: "/kontakt",
     name: "Contact",
     component: Contact,
+  },
+  {
+    path: "/wycena",
+    name: "ContactForm",
+    component: ContactForm,
   },
 ];
 
