@@ -10,10 +10,9 @@
       <div>
         <router-link to="/">AGENCJA MARKETINGOWA</router-link>
       </div>
-      <div class="dropdown">
-        <router-link to="/uslugi"
-          >OFERTA <i class="fas fa-caret-down"></i
-        ></router-link>
+      <div class="dropdown" @mouseover="cOver" @mouseout="cOut">
+        <a><span @click="$router.push('/uslugi')">OFERTA</span> <i class="fas fa-caret-down"></i
+        ></a>
         <div class="offers-dropdown">
           <div>
             <router-link to="/marketing-internetowy"
@@ -148,10 +147,18 @@ export default {
     window.removeEventListener("resize", this.resizeToggle);
   },
   methods: {
+    colorChange(){
+      this.navbarToggler = true;
+    },
     handleScroll() {
-      if (window.scrollY > 0) this.navbarToggler = true;
-      else if (!this.menuToggler && window.scrollY === 0)
+      if (window.scrollY > 0) {
+        this.navbarToggler = true;
+        document.querySelector(".offers-dropdown").style.top = '55px';
+      }
+      else if (!this.menuToggler && window.scrollY === 0) {
         this.navbarToggler = false;
+        document.querySelector(".offers-dropdown").style.top = '80px';
+      }
     },
     toggleMenu() {
       this.menuToggler = !this.menuToggler;

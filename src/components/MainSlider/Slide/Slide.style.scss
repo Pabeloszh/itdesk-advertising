@@ -9,7 +9,8 @@
     background-size: cover;
     visibility: visible;
     opacity: 1;
-    transition: all 0.5s ease-in-out;
+    transition: all 1000ms ease-in-out;
+    z-index:3;
 
     .slide-desc{
         width:100%;

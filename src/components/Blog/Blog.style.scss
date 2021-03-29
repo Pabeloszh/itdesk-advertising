@@ -5,6 +5,12 @@
     .blog-title{
         text-align: center;
         margin-bottom:60px;
+        h4, h2{
+            visibility: hidden;
+            opacity:0;
+            transform:translateY(50px);
+            transition:all 1000ms ease-in-out;
+        }
         h4{
             font-family: Kristi;
             color: #EF7A07;
@@ -30,6 +36,16 @@
         grid-template-columns: repeat(3, 300px);
         column-gap: 55px;
         row-gap: 65px;  
+    }
+}
+
+.animate{
+    .blog-title{
+        h4, h2{
+            visibility: visible;
+            opacity:1;
+            transform:translateY(0px);
+        }
     }
 }
 

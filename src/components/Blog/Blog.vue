@@ -75,7 +75,34 @@ export default {
           "W dzisiejszych czasach, kiedy w Polsce jest ponad 30,5 miliona użytkowników internetowych każda firma, która chce się rozwijać, musi zaistnieć w Internecie. Kiedyś wystarczało posiadać wizytówkę firmową z telefonem i adresem, lecz w 2020 roku to już zdecydowanie za..."
       }
     };
-  }
+  },
+  mounted(){
+    window.addEventListener("scroll", this.animateOnScroll);
+  },
+  unmounted(){
+    window.removeEventListener("scroll", this.animateOnScroll);
+  },
+  methods:{
+    inView(){
+      var element = document.querySelector('.blog-container');
+      var elementHeight = element.clientHeight;
+      var windowHeight = window.innerHeight;
+      var scrollY = window.scrollY || window.pageYOffset;
+      
+      var scrollPosition = scrollY + windowHeight;
+      var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+      
+      if (scrollPosition > elementPosition * 0.55) {
+        return true;
+      }
+      return false;
+    },
+    animateOnScroll(){
+      if (this.inView()) {
+        document.querySelector('.blog-container').classList.add('animate');
+      }
+    }
+  },
 };
 </script>
 <style scoped lang="scss" src="./Blog.style.scss"></style>

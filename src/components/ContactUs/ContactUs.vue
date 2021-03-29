@@ -20,7 +20,35 @@
 </template>
 <script>
 export default {
-  name: "ContactUs"
+  name: "ContactUs",
+  mounted(){
+    window.addEventListener("scroll", this.animateOnScroll);
+  },
+  unmounted(){
+    window.removeEventListener("scroll", this.animateOnScroll);
+  },
+  methods:{
+    inView(){
+      var element = document.querySelector('.contact-container');
+      var elementHeight = element.clientHeight;
+      var windowHeight = window.innerHeight;
+      var scrollY = window.scrollY || window.pageYOffset;
+      
+      var scrollPosition = scrollY + windowHeight;
+      var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+      
+      if (scrollPosition > elementPosition * 0.75) {
+        return true;
+      }
+      return false;
+    },
+    animateOnScroll(){
+      if (this.inView()) {
+        console.log(123);
+        document.querySelector('.contact-container').classList.add('animate');
+      }
+    }
+  },
 };
 </script>
 <style scoped lang="scss" src="./ContactUs.style.scss"></style>

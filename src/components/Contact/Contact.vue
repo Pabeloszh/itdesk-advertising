@@ -45,7 +45,7 @@ export default {
         paragraph: "Pracujemy od poniedziałku do piątku w godzinach od 8.00 do 16.00"
       },
     }
-  },
+  }
 }
 </script>
 <style scoped lang="scss" src="./Contact.style.scss">

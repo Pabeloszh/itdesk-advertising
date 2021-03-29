@@ -1,8 +1,8 @@
 <template>
   <div class="main-container">
     <Slide :groupedProps="first" />
-    <Slide :groupedProps="second" style="display:none" />
-    <Slide :groupedProps="third" style="display:none" />
+    <Slide :groupedProps="second" style="z-index:2" />
+    <Slide :groupedProps="third" style="z-index:2" />
 
     <div class="prev-next">
       <i class="fas fa-chevron-left" @click="toggleLeft"></i>
@@ -95,7 +95,9 @@ export default {
       let arrows = document.querySelectorAll(".prev-next i");
       let bulls = document.querySelectorAll(".dots p");
       for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].style.visibility = 'hidden';
+        slides[i].style.opacity = '0';
+        slides[i].style.zIndex = "2";
         bulls[i].style.opacity = "0.5";
       }
       if (val !== 0) {
@@ -113,11 +115,12 @@ export default {
           bulls[k].style.color = "#fff";
         }
       }
-
-      slides[val].style.display = "block";
+      slides[val].style.visibility = 'visible';
+      slides[val].style.opacity = '1';
+      slides[val].style.zIndex = "3";
       bulls[val].style.opacity = "1";
     }
   }
 };
 </script>
-<style scoped lang="scss" src="./MainSlider.style.scss"></style>
+<style lang="scss" src="./MainSlider.style.scss"></style>

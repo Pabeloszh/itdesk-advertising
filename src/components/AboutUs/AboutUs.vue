@@ -41,7 +41,35 @@
 </template>
 <script>
 export default {
-  name: "AboutUs"
+  name: "AboutUs",
+  mounted(){
+    window.addEventListener("scroll", this.animateOnScroll);
+  },
+  unmounted(){
+    window.removeEventListener("scroll", this.animateOnScroll);
+  },
+  methods:{
+    inView(){
+      var element = document.querySelector('.about-container');
+      var elementHeight = element.clientHeight;
+      var windowHeight = window.innerHeight;
+      var scrollY = window.scrollY || window.pageYOffset;
+      
+      var scrollPosition = scrollY + windowHeight;
+      var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+      
+      if (scrollPosition > elementPosition * 0.75) {
+        return true;
+      }
+      return false;
+    },
+    animateOnScroll(){
+      if (this.inView()) {
+        console.log()
+        document.querySelector('.about-container').classList.add('animate');
+      }
+    }
+  },
 };
 </script>
 <style scoped lang="scss" src="./AboutUs.style.scss"></style>

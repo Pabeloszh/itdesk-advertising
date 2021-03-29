@@ -37,7 +37,34 @@
 </template>
 <script>
 export default {
-  name: "ContactForm"
+  name: "ContactForm",
+  mounted(){
+    window.addEventListener("scroll", this.animateOnScroll);
+  },
+  unmounted(){
+    window.removeEventListener("scroll", this.animateOnScroll);
+  },
+  methods:{
+    inView(){
+      var element = document.querySelector('.cform-container');
+      var elementHeight = element.clientHeight;
+      var windowHeight = window.innerHeight;
+      var scrollY = window.scrollY || window.pageYOffset;
+      
+      var scrollPosition = scrollY + windowHeight;
+      var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+      
+      if (scrollPosition > elementPosition * 0.8) {
+        return true;
+      }
+      return false;
+    },
+    animateOnScroll(){
+      if (this.inView()) {
+        document.querySelector('.cform-container').classList.add('animate');
+      }
+    }
+  },
 };
 </script>
 <style scoped lang="scss" src="./ContactForm.style.scss"></style>
