@@ -99,6 +99,7 @@ export default {
       },
       dotPos: 0,
       pos:0,
+      top:0,
       bottom:0
     }
   },
@@ -106,8 +107,9 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
     this.pos = window.scrollY;
 
-    this.bottom = document.querySelector('.title-container').clientHeight + document.querySelector('.acomp-desc').clientHeight + document.querySelector('.acomp-title').clientHeight + document.querySelector('.acomp-container').clientHeight 
-    console.log(this.bottom)
+    this.bottom = document.querySelector('.title-container').clientHeight + document.querySelector('.acomp-desc').clientHeight + document.querySelector('.acomp-container').clientHeight;
+    this.top = document.querySelector('.title-container').clientHeight + document.querySelector('.acomp-desc').clientHeight
+    console.log(document.querySelector('.title-container').clientHeight + document.querySelector('.acomp-desc').clientHeight + document.querySelector('.acomp-container').clientHeight)
     let dots = document.querySelectorAll('.dot');
     dots.forEach(dot=>{
         dot.classList.remove('dot-active')
@@ -121,9 +123,9 @@ export default {
         this.dotPos = window.getComputedStyle(document.querySelector('#dot')).getPropertyValue('top');
         this.pos = window.scrollY;
 
-        if(this.pos <= 0) document.querySelector('#dot').style.top = '0';
-        else if(this.pos >= this.bottom) document.querySelector('#dot').style.top = '1785px';
-        else if(this.pos >= window.innerHeight/2) document.querySelector('#dot').style.top = `calc(${this.pos - window.innerHeight + 'px'})`;
+        if(this.pos <= 0) document.querySelector('#dot').style.top = '-12.5px';
+        else if(this.pos >= this.bottom) document.querySelector('#dot').style.top =  document.querySelector('.acomp-container').clientHeight - 25;
+        else if(this.pos >= this.top) document.querySelector('#dot').style.top = `calc(${this.pos - this.top + 'px'})`;
 
         console.log(this.pos, parseInt(this.dotPos.replace(/[^\d.-]/g, '')))
 

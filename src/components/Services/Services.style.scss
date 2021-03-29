@@ -3,6 +3,13 @@
     .serv-desc{
         text-align:center;
         width:100%;
+
+        h3,h4,h2,p{
+            visibility: hidden;
+            opacity:0;
+            transform:translateY(50px);
+            transition:all 1000ms ease-in-out;
+        }
         
         h3,h4{
             font-family: Kristi;
@@ -37,6 +44,14 @@
         grid-template-columns: 33.3% 33.3% 33.3%;
         grid-template-rows: 320px 320px;
         text-align:center;
+        .box-container{
+            img{
+                visibility: hidden;
+                opacity:0;
+                transform:translateY(-15px);
+                transition:all 1250ms ease-in-out;
+            }
+        }
         .box-container:nth-child(1){
             border-right:1px dotted #ef7a07;
             border-bottom: 1px dotted #ef7a07;
@@ -55,6 +70,36 @@
             border-right:1px dotted #ef7a07;
         }
 
+    }
+}
+
+.animate{
+    .serv-desc{
+        h3,h4,h2,p{
+            visibility: visible;
+            opacity:1;
+            transform:translateY(0px);
+            transition:all 1000ms ease-in-out;
+
+        }
+    }
+    .serv-box{
+        .box-container{
+            img{
+                visibility: visible;
+                opacity:1;
+                transform:translateY(0px);
+            }
+        }
+    }
+}
+
+@keyframes textAnim{
+    0%{
+        transform: translateY(200px)
+    }
+    100%{
+        transform: translateY(0px)
     }
 }
 

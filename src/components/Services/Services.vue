@@ -71,7 +71,36 @@ export default {
         desc: "Sprawdź jakie inne usługi mamy jeszcze w ofercie."
       }
     };
-  }
+  },
+  mounted(){
+    window.addEventListener("scroll", this.animateOnScroll);
+  },
+  unmounted(){
+    window.removeEventListener("scroll", this.animateOnScroll);
+  },
+  methods:{
+    inView(){
+      var element = document.querySelector('.serv-container');
+      var elementHeight = element.clientHeight;
+      var windowHeight = window.innerHeight;
+      var scrollY = window.scrollY || window.pageYOffset;
+      
+      var scrollPosition = scrollY + windowHeight;
+      var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+      
+      if (scrollPosition > elementPosition * 0.25) {
+        return true;
+      }
+      return false;
+    },
+    animateOnScroll(){
+      if (this.inView()) {
+        document.querySelector('.serv-container').classList.add('animate');
+      }
+    }
+  },
+ 
+  
 };
 </script>
-<style scoped lang="scss" src="./Services.style.scss"></style>
+<style lang="scss" src="./Services.style.scss"></style>

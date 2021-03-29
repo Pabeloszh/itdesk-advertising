@@ -11,6 +11,12 @@
     justify-content: flex-end;
     .contact-form{
         width: 62%;
+        h2, h4{
+            visibility: hidden;
+            opacity:0;
+            transform:translateY(50px);
+            transition:all 1000ms ease-in-out;
+        }
         h2{
             font-weight: 800;
             font-size: 50px;
@@ -30,6 +36,10 @@
             margin-bottom:35px;
         }
         input, textarea{
+            visibility: hidden;
+            opacity:0;
+            transform:translateY(-15px);
+            transition:all 1250ms ease-in-out;
             font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
             font-size: 16px;
             box-shadow: inset 0px -1px 0px 0px #ffffff;
@@ -56,6 +66,22 @@
             padding:14px 30px;
             width:auto;
             background-color: #ef7a07;
+        }
+    }
+}
+
+.animate{
+    .contact-form{
+        h2, h4{
+            visibility: visible;
+            opacity:1;
+            transform:translateY(0px);
+            transition:all 1000ms ease-in-out;
+        }
+        input, textarea{
+            visibility: visible;
+            opacity:1;
+            transform:translateY(0px);
         }
     }
 }

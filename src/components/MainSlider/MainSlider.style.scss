@@ -1,8 +1,11 @@
 .main-container{
     width:100%;
-    height:70vh;
+    min-height: 500px;
+    max-height:100vh;
     position:relative;
     background-color: gray;
+    opacity:0;
+    animation: titleAnim 1000ms ease-in-out forwards;
     .prev-next{
         width:100%;
         position: absolute;
@@ -12,19 +15,22 @@
         display:flex;
         justify-content: space-between;
         padding: 0 30px;
+        z-index:3;
+
         i{
             transition:all 300ms ease-in-out;
-            font-size: 45px;
+            font-size: 24px;
             color: #fff;
         }
     }
     .dots{
         position:absolute;
-        bottom: 10px;
+        bottom: 0;
         left:50%;
         transform:translate(-50%,-50%);
         display:flex;
         justify-content: space-between;
+        z-index:3;
         p{
             transition:all 300ms ease-in-out;
             font-size:35px;
@@ -32,6 +38,15 @@
             margin: 0 10px;
             opacity:0.5;
         }
+    }
+}
+
+@keyframes titleAnim{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
     }
 }
 
