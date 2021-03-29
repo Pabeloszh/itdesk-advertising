@@ -82,7 +82,6 @@
       <i class="fas fa-bars"></i>
     </div>
   </div>
-
   <div
     class="mobile-nav"
     :style="menuToggler ? 'display:flex' : 'display:none'"
@@ -124,6 +123,16 @@
     <router-link to="/portfolio">Portfolio</router-link>
     <router-link to="/kontakt">Kontakt</router-link>
     <router-link to="/wycena">Wycena</router-link>
+  </div>
+  <div class="call">
+    <div class="icon">
+      <i class="fas fa-phone-alt"></i>
+    </div>
+  </div>
+  <div class="mess">
+    <div class="icon">
+      <i class="fab fa-facebook-messenger"></i>
+    </div>
   </div>
 </template>
 
@@ -182,4 +191,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss" src="./Navbar.style.scss"></style>
+<style lang="scss" src="./Navbar.style.scss"></style>
