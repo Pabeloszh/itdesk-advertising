@@ -3,6 +3,7 @@
   <Services />
   <ContactUs />
   <AboutUs />
+  <OurWork />
   <Blog />
   <ContactForm />
 </template>
@@ -13,6 +14,7 @@ import MainSlider from "@/components/MainSlider/MainSlider.vue";
 import Services from "@/components/Services/Services.vue";
 import ContactUs from "@/components/ContactUs/ContactUs.vue";
 import AboutUs from "@/components/AboutUs/AboutUs.vue";
+import OurWork from "@/components/OurWork/OurWork.vue"
 import Blog from "@/components/Blog/Blog.vue";
 import ContactForm from "@/components/ContactForm/ContactForm.vue";
 export default {
@@ -22,6 +24,7 @@ export default {
     Services,
     ContactUs,
     AboutUs,
+    OurWork,
     Blog,
     ContactForm
   }
