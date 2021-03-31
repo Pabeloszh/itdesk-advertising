@@ -35,6 +35,10 @@
         border-right:1px dotted #ef7a07;
         border-left:1px dotted #ef7a07;
     }
+    .box:hover{
+        transition: background-color 300ms ease-in-out;
+        background-color:#f7f7f7;
+    }
 }
 @media only screen and (max-width: 1024px){
     .off-box{

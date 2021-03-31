@@ -1,6 +1,7 @@
 .about-container{
     width:100%;
     padding:60px 10%;
+    overflow-y: hidden;
     .about-title{
         text-align: center;
         margin-bottom:60px;
@@ -61,23 +62,23 @@
                 }
             }
             div:nth-child(1){
-                transform:translateX(45px);
+                transform:translateX(105px);
                 transition:all 1250ms ease-in-out;
             }
             div:nth-child(2){
-                transform:translateX(60px);
+                transform:translateX(125px);
                 transition:all 1500ms ease-in-out;
             }
             div:nth-child(3){
-                transform:translateX(75px);
+                transform:translateX(145px);
                 transition:all 1750ms ease-in-out;
             }
             div:nth-child(4){
-                transform:translateX(90px);
+                transform:translateX(165px);
                 transition:all 2000ms ease-in-out;
             }
             div:nth-child(5){
-                transform:translateX(105px);
+                transform:translateX(185px);
                 transition:all 2250ms ease-in-out;
                 
             }

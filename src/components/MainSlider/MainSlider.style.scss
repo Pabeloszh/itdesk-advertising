@@ -1,7 +1,6 @@
 .main-container{
     width:100%;
-    min-height: 500px;
-    max-height:100vh;
+    height:100vh;
     position:relative;
     background-color: gray;
     opacity:0;
@@ -22,6 +21,16 @@
             font-size: 24px;
             color: #fff;
         }
+        i:first-child{
+            visibility: hidden;
+            opacity:0;
+            margin-left:-30px;
+        }
+        i:last-child{
+            visibility: hidden;
+            opacity:0;
+            margin-right:-30px;
+        }
     }
     .dots{
         position:absolute;
@@ -37,6 +46,21 @@
             color:#fff;
             margin: 0 10px;
             opacity:0.5;
+        }
+    }
+}
+
+.main-container:hover{
+    .prev-next{
+        i:first-child{
+            visibility: visible;
+            opacity:1;
+            margin-left:0px;
+        }
+        i:last-child{
+            visibility: visible;
+            opacity:1;
+            margin-right:0px;
         }
     }
 }

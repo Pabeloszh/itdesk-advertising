@@ -31,6 +31,10 @@
             line-height: 1.6em; 
         }
     }
+    .box:hover{
+        transition: background-color 300ms ease-in-out;
+        background-color:#f7f7f7;
+    }
     .box:nth-child(1){
         border-right:1px dotted #ef7a07;
         border-bottom:1px dotted #ef7a07;
@@ -61,7 +65,6 @@
     .mark-box{
         display:grid;
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(4, 450px);
         text-align:center;
         .box:nth-child(1){
             border-right:1px dotted #ef7a07;
@@ -96,7 +99,6 @@
     .mark-box{
         display:grid;
         grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(8, 450px);
         text-align:center;
         .box:nth-child(1){
             border-right:none;

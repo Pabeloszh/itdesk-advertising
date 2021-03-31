@@ -39,6 +39,9 @@
 export default {
   name: "ContactForm",
   mounted(){
+    if(this.$route.path === '/wycena'){
+      document.querySelector('.cform-container').classList.add('animate');
+    }
     window.addEventListener("scroll", this.animateOnScroll);
   },
   unmounted(){

@@ -8,10 +8,12 @@
     <div class="dsoft-box">
       <div class="box">
         <div>
-          <img
-            src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/projectdesk.png"
-            alt=""
-          />
+          <a href="https://informatyk360.pl/">
+            <img
+              src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/projectdesk.png"
+              alt=""
+            />
+          </a>
         </div>
         <h3>System do ewidencji zgłoszeń</h3>
         <p>
@@ -32,10 +34,12 @@
       </div>
       <div class="box">
         <div>
-          <img
-            src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/flexrekruter.png"
-            alt=""
-          />
+          <a href="https://flexrekruter.itdesk.eu/">
+            <img
+              src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/flexrekruter.png"
+              alt=""
+            />
+          </a>
         </div>
         <h3>System do wspomagania Agencji Pracy</h3>
         <p>
@@ -56,10 +60,12 @@
       </div>
       <div class="box">
         <div>
-          <img
-            src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/ngocrm3.png"
-            alt=""
-          />
+          <a href="https://ngocrm.itdesk.eu/">
+            <img
+              src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/ngocrm3.png"
+              alt=""
+            />
+          </a>
         </div>
         <h3>System do wspomagania pracy NGO</h3>
         <p>

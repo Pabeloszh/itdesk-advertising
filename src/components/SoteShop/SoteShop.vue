@@ -23,8 +23,8 @@
           <p>
             Sklep i panel sklepu jest intuicyjnie zaprojektowany. Dodatkowo
             przygotowaliśmy wiele profesjonalnych prezentacji
-            <a href="https://agencja-interaktywna.opole.pl/wideomarketing/"
-              >Wideo</a
+            <router-link to="/wideomarketing"
+              >Wideo</router-link
             ><br />
             opisujących jak korzystać z funkcji programu.
           </p>

@@ -43,6 +43,7 @@
             // text-shadow: 0 1px 3px rgb(0 0 0 / 30%);
         }
         button{
+            outline:none;
             color:#fff;
             border-width: 0px;
             border-radius:3px;
@@ -54,6 +55,10 @@
             background-color: #ef7a07;
             padding: 14px 30px;
             margin-top: 40px;
+        }
+        button:hover{
+            transition: background-color 300ms ease-in-out;
+            background-color:#000;
         }
     }
 }

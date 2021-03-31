@@ -14,8 +14,8 @@
           pozycji w wyszukiwarkach, odbioru przez potencjalnych klientów. Audyt
           to również wytyczenie ścieżki zmian, które pozwolą zwiększyć pozycję
           Twojej
-          <a href="https://agencja-interaktywna.opole.pl/strony-internetowe/"
-            >strony internetowej.</a
+          <router-link to="/strony-internetowe"
+            >strony internetowej.</router-link
           >
         </p>
       </div>

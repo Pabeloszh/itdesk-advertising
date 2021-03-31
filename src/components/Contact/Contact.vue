@@ -18,13 +18,12 @@
             </form>
         </div>
         <div>
-            map
         </div>
     </div>
 </template>
 
 <script>
-import Title from "@/components/Title/Title.vue"
+import Title from "@/components/Title/Title.vue";
 export default {
   name: "Contact",
   components: {

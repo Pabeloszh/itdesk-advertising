@@ -19,7 +19,7 @@
                     </navigation>
                 </template>
             </Carousel>
-        <button>ZOBACZ WIĘCEJ</button>
+        <button @click="$router.push('/portfolio')">ZOBACZ WIĘCEJ</button>
     </div>
 </template>
 
@@ -58,6 +58,7 @@ export default {
                 itemsToShow: 3.5,
                 wrapAround: true,
                 snapAlign: 'center',
+                currentSlide: 2,
             },
             breakpoints: {
                 0: {
@@ -94,7 +95,6 @@ export default {
         window.addEventListener("scroll", this.animateOnScroll);
         document.querySelector('.carousel__prev').style = "background-color:#00000080; outline:none; left:30px; border-radius:0; color:#fff;"
         document.querySelector('.carousel__next').style = "background-color:#00000080; outline:none; right:30px; border-radius:0; color:#fff;"
-
     },
     unmounted(){
         window.removeEventListener("scroll", this.animateOnScroll);

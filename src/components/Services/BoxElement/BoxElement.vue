@@ -1,5 +1,5 @@
 <template>
-  <div class="box-container">
+  <div class="box-container" @click="$router.push(groupedProps.url)">
     <img :src="groupedProps.img" alt="icon" />
     <div class="box-desc">
       <h5>{{ groupedProps.title }}</h5>

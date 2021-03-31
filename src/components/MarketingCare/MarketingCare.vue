@@ -23,7 +23,7 @@
           <strong>stałą liczbę godzin</strong> pracy.
         </p>
         <p>
-          Mamy dla Ciebie przygotowany <a href="">HelpDesk</a>, który gwarantuje
+          Mamy dla Ciebie przygotowany <a href="https://informatyk360.pl/">HelpDesk</a>, który gwarantuje
           przejrzystość i transparentność działań.
         </p>
         <p>Całość podsumowujemy na comiesięcznych spotkaniach.</p>
@@ -39,8 +39,8 @@
           </li>
           <li>
             Obsługa i optymalizacja kampanii
-            <a href="https://agencja-interaktywna.opole.pl/google-ads/"
-              ><strong>Google Ads</strong></a
+            <router-link to="/google-ads"
+              ><strong>Google Ads</strong></router-link
             >;
           </li>
           <li>
@@ -48,20 +48,20 @@
           </li>
           <li>
             Prowadzenie kont w
-            <a href="https://agencja-interaktywna.opole.pl/social-media/"
-              ><strong>social mediach</strong></a
+            <router-link to="/social-media"
+              ><strong>social mediach</strong></router-link
             >
             (Facebook, Instagram);
           </li>
           <li>
-            <a href="https://agencja-interaktywna.opole.pl/mailing/"
-              ><strong>E-mail marketing</strong></a
+            <router-link to="/mailing"
+              ><strong>E-mail marketing</strong></router-link
             >
             oraz SMS marketing;
           </li>
           <li>
-            <a href="https://agencja-interaktywna.opole.pl/marketing-szeptany/"
-              ><strong>Marketing szeptany</strong></a
+            <router-link to="/marketing-szeptany"
+              ><strong>Marketing szeptany</strong></router-link
             >
             (wpisy na forach, pozytywne oceny m.in. w Google Moja Firma);
           </li>
@@ -72,8 +72,8 @@
             działań;
           </li>
           <li>
-            <a href="https://agencja-interaktywna.opole.pl/audyt-strony/"
-              ><strong>Audyt strony</strong></a
+            <router-link to="/audyt-strony"
+              ><strong>Audyt strony</strong></router-link
             >
             wraz z wprowadzaniem zmian optymalizacyjnych;
           </li>

@@ -28,8 +28,9 @@ import Cloud from "@/components/Cloud/Cloud.vue";
 import Training from "@/components/Training/Training.vue";
 import OurBlog from "@/components/OurBlog/OurBlog.vue";
 import AboutCompany from "@/components/AboutCompany/AboutCompany.vue";
-import Contact from "@/components/Contact/Contact.vue"
-import ContactForm from "@/components/ContactForm/ContactForm.vue"
+import Contact from "@/components/Contact/Contact.vue";
+import ContactForm from "@/components/ContactForm/ContactForm.vue";
+import BlogPost from "@/components/BlogPost/BlogPost.vue"
 
 const routes = [
   {
@@ -178,6 +179,11 @@ const routes = [
     path: "/blog",
     name: "OurBlog",
     component: OurBlog,
+  },
+  {
+    path: "/blog/:title",
+    name: "BlogPost",
+    component: BlogPost
   },
   {
     path: "/o-firmie",

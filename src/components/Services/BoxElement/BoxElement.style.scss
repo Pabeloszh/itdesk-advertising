@@ -23,3 +23,8 @@
         }
     }
 }
+
+.box-container:hover{
+    transition: background-color 300ms ease-in-out;
+    background-color:#f7f7f7;
+}

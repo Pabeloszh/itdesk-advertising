@@ -9,9 +9,9 @@
       <i class="fas fa-chevron-right" @click="toggleRight"></i>
     </div>
     <div class="dots">
-      <p style="opacity:1">&bull;</p>
-      <p>&bull;</p>
-      <p>&bull;</p>
+      <p style="opacity:1" @click="counter=0">&bull;</p>
+      <p  @click="counter=1">&bull;</p>
+      <p  @click="counter=2">&bull;</p>
     </div>
   </div>
 </template>
@@ -34,7 +34,8 @@ export default {
         title2: "INTERNETOWY",
         paragraph: "pozycjonowanie / social media / kreacja treści",
         buttonDesc: "Zobacz jak zwiększymy Twoje dochody",
-        isLight: false
+        isLight: false,
+        url: '/marketing-internetowy'
       },
       second: {
         backgroundPhoto: {
@@ -46,7 +47,8 @@ export default {
         title2: "INTERNETOWE",
         paragraph: "wordpress / prestashop / magento / sote",
         buttonDesc: "Zobacz jak usprawnimy twój biznes",
-        isLight: true
+        isLight: true,
+        url: '/strony-i-sklepy-internetowe'
       },
       third: {
         backgroundPhoto: {
@@ -58,7 +60,8 @@ export default {
         title2: "I DOMENY",
         paragraph: "serwery dedykowane / niezawodna poczta / usługi na miarę",
         buttonDesc: "Wybierz usługi dopasowane do twoich potrzeb",
-        isLight: true
+        isLight: true,
+        url: '/hosting-i-domeny'
       },
       counter: 0
     };

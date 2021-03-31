@@ -13,8 +13,8 @@
     <div>
       <p>
         Przygotowując
-        <a href="https://agencja-interaktywna.opole.pl/audyt-strony/"
-          >optymalizację SEO</a
+        <router-link to="/audyt-strony"
+          >optymalizację SEO</router-link
         >, tworzymy unikalne treści, które są najważniejszym czynnikiem
         wpływającym na pozycję danej witryny w wynikach wyszukiwania.
         Udoskonalamy kod strony,
