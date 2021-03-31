@@ -14,7 +14,7 @@ export default {
     groupedProps: {
       type: Object
     }
-  }
+  },
 };
 </script>
 <style scoped lang="scss" src="./BlogCard.style.scss"></style>

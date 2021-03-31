@@ -19,7 +19,8 @@ export default {
       offers: {
         backgroundPhoto: {
           backgroundImage:
-            "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/4198525-1-scaled.jpg)"
+            "url(https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/4198525-1-scaled.jpg)",
+          color: '#999'
         },
         desc: "Profesjonalne",
         title: "USŁUGI INTERNETOWE"

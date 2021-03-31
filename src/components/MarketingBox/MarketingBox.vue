@@ -1,6 +1,6 @@
 <template>
   <div class="mark-box">
-    <div class="box">
+    <div class="box" @click="$router.push('/opieka-marketingowa')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-marketing1-p.svg"
         alt=""
@@ -18,7 +18,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/google-ads')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-marketing2-p.svg"
         alt=""
@@ -32,7 +32,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/audyt-strony-internetowej')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-marketing3-p.svg"
         alt=""
@@ -46,7 +46,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/pozycjonowanie')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-marketing4-p.svg"
         alt=""
@@ -62,7 +62,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/social-media')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-marketing5-p.svg"
         alt=""
@@ -76,7 +76,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/blog-firmowy')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-marketing6-p.svg"
         alt=""
@@ -91,7 +91,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/mailing')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-marketing7-p.svg"
         alt=""
@@ -105,7 +105,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/marketing-szeptany')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-marketing8-p.svg"
         alt=""

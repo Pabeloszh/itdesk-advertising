@@ -1,19 +1,14 @@
 <template>
    <Title :groupedProps="titleData" />
    <div class="blog-container">
-       <div class="blog-desc">
-            <BlogCard :groupedProps="first" />
-            <BlogCard :groupedProps="second" />
-            <BlogCard :groupedProps="third" />
-            <BlogCard :groupedProps="fourth" />
-            <BlogCard :groupedProps="fifth" />
-            <BlogCard :groupedProps="sixth" />
-            <BlogCard :groupedProps="seventh" />
-        </div>
+      <div class="blog-desc">
+        <BlogCard v-for="(post, index) in posts" :key="index" :groupedProps="post" />   
+      </div>
    </div>
 </template>
 
 <script>
+import  {mapState, mapMutations} from "vuex"
 import Title from "@/components/Title/Title.vue";
 import BlogCard from "@/components/Blog/BlogCard/BlogCard.vue"
 export default {
@@ -21,6 +16,9 @@ export default {
   components: {
     Title,
     BlogCard
+  },
+  computed:{
+      ...mapState(['posts'])
   },
   data() {
     return {
@@ -83,6 +81,9 @@ export default {
           "W dzisiejszych czasach, kiedy w Polsce jest ponad 30,5 miliona użytkowników internetowych każda firma, która chce się rozwijać, musi zaistnieć w Internecie. Kiedyś wystarczało posiadać wizytówkę firmową z telefonem i adresem, lecz w 2020 roku to już zdecydowanie za..."
       }
     };
+  },
+  methods:{
+      ...mapMutations(['posts']),
   }
 };
 </script>

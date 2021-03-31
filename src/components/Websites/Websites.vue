@@ -9,9 +9,9 @@
         nim możesz pozyskać zainteresowanych odbiorców, klientów, kontrahentów!
       </p>
       <p>
-        <a
-          href="https://agencja-interaktywna.opole.pl/strony-i-sklepy-internetowe/"
-          >Nasza oferta</a
+        <router-link
+          to="=/strony-i-sklepy-internetowe"
+          >Nasza oferta</router-link
         >
         pokazuje, że profesjonalna, skuteczna strona internetowa może być w
         atrakcyjnej, przystępnej cenie!

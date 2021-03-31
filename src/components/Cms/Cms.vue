@@ -8,8 +8,8 @@
         <a href="https://www.drupal.org.pl/">Drupal</a> czy
         <a href="https://www.joomla.org/">Joomla</a>, które są świetnie
         przygotowane pod
-        <a href="https://agencja-interaktywna.opole.pl/pozycjonowanie/"
-          >pozycjonowanie</a
+        <router-link to="/pozycjonowanie"
+          >pozycjonowanie</router-link
         >
         stron.
       </p>

@@ -32,6 +32,10 @@
             line-height: 1.6em; 
         }
     }
+    .box:hover{
+        transition: background-color 300ms ease-in-out;
+        background-color:#fff;
+    }
     .box:nth-child(2){
         border-right:1px dotted #ef7a07;
         border-left:1px dotted #ef7a07;

@@ -124,8 +124,8 @@
             zamieścić
             <strong
               >w formacie tekstowym, graficznym lub
-              <a href="http://itdesk.exposeit.pl/wideomarketing/"
-                >video</a
+              <router-link to="/wideomarketing"
+                >video</router-link
               ></strong
             >.
           </p>

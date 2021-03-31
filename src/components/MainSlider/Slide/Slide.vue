@@ -8,7 +8,7 @@
       <p :style="groupedProps.isLight ? 'color: #353740' : 'color: #fff'">
         {{ groupedProps.paragraph }}
       </p>
-      <button>{{ groupedProps.buttonDesc }}</button>
+      <button @click="$router.push(groupedProps.url)">{{ groupedProps.buttonDesc }}</button>
     </div>
   </div>
 </template>

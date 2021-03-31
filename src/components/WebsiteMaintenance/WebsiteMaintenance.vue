@@ -13,9 +13,9 @@
         Zapewniamy kompleksową opiekę nad stroną www, sklepem, systemem
         dedykowanym (intranet, extranet, b2b, systemami opartymi o PHP i SQL)
         oraz systemami gotowymi (WordPress, Drupal,
-        <a href="https://agencja-interaktywna.opole.pl/magento-2/">Magento</a>,
-        <a href="https://agencja-interaktywna.opole.pl/presta-shop/"
-          >PrestaShop</a
+        <router-link to="/sklep-magento">Magento</router-link>,
+        <router-link to="/sklep-presta"
+          >PrestaShop</router-link
         >, Sote, Shopper).
       </p>
     </div>
