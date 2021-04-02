@@ -9,9 +9,9 @@
       <i class="fas fa-chevron-right" @click="toggleRight"></i>
     </div>
     <div class="dots">
-      <p style="opacity:1" @click="counter=0">&bull;</p>
-      <p  @click="counter=1">&bull;</p>
-      <p  @click="counter=2">&bull;</p>
+      <p style="opacity:1" @click="counter = 0">&bull;</p>
+      <p @click="counter = 1">&bull;</p>
+      <p @click="counter = 2">&bull;</p>
     </div>
   </div>
 </template>
@@ -35,7 +35,7 @@ export default {
         paragraph: "pozycjonowanie / social media / kreacja treści",
         buttonDesc: "Zobacz jak zwiększymy Twoje dochody",
         isLight: false,
-        url: '/marketing-internetowy'
+        url: "/marketing-internetowy"
       },
       second: {
         backgroundPhoto: {
@@ -48,7 +48,7 @@ export default {
         paragraph: "wordpress / prestashop / magento / sote",
         buttonDesc: "Zobacz jak usprawnimy twój biznes",
         isLight: true,
-        url: '/strony-i-sklepy-internetowe'
+        url: "/strony-i-sklepy-internetowe"
       },
       third: {
         backgroundPhoto: {
@@ -61,7 +61,7 @@ export default {
         paragraph: "serwery dedykowane / niezawodna poczta / usługi na miarę",
         buttonDesc: "Wybierz usługi dopasowane do twoich potrzeb",
         isLight: true,
-        url: '/hosting-i-domeny'
+        url: "/hosting-i-domeny"
       },
       counter: 0
     };
@@ -98,8 +98,8 @@ export default {
       let arrows = document.querySelectorAll(".prev-next i");
       let bulls = document.querySelectorAll(".dots p");
       for (let i = 0; i < slides.length; i++) {
-        slides[i].style.visibility = 'hidden';
-        slides[i].style.opacity = '0';
+        slides[i].style.visibility = "hidden";
+        slides[i].style.opacity = "0";
         slides[i].style.zIndex = "2";
         bulls[i].style.opacity = "0.5";
       }
@@ -118,8 +118,8 @@ export default {
           bulls[k].style.color = "#fff";
         }
       }
-      slides[val].style.visibility = 'visible';
-      slides[val].style.opacity = '1';
+      slides[val].style.visibility = "visible";
+      slides[val].style.opacity = "1";
       slides[val].style.zIndex = "3";
       bulls[val].style.opacity = "1";
     }

@@ -178,33 +178,37 @@ const routes = [
   {
     path: "/blog",
     name: "OurBlog",
-    component: OurBlog,
+    component: OurBlog
   },
   {
-    path: "/blog/:title",
+    path: "/blog-post/:post",
     name: "BlogPost",
     component: BlogPost
   },
   {
     path: "/o-firmie",
     name: "AboutCompany",
-    component: AboutCompany,
+    component: AboutCompany
   },
   {
     path: "/kontakt",
     name: "Contact",
-    component: Contact,
+    component: Contact
   },
   {
     path: "/wycena",
     name: "ContactForm",
-    component: ContactForm,
-  },
+    component: ContactForm
+  }
 ];
 
 const router = createRouter({
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
+  mode: 'history',
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
 });
 
 export default router;

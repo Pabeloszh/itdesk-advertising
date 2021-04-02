@@ -124,9 +124,7 @@
             zamieścić
             <strong
               >w formacie tekstowym, graficznym lub
-              <router-link to="/wideomarketing"
-                >video</router-link
-              ></strong
+              <router-link to="/wideomarketing">video</router-link></strong
             >.
           </p>
           <p>

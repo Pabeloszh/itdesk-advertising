@@ -23,9 +23,7 @@
           <p>
             Sklep i panel sklepu jest intuicyjnie zaprojektowany. Dodatkowo
             przygotowaliśmy wiele profesjonalnych prezentacji
-            <router-link to="/wideomarketing"
-              >Wideo</router-link
-            ><br />
+            <router-link to="/wideomarketing">Wideo</router-link><br />
             opisujących jak korzystać z funkcji programu.
           </p>
         </div>

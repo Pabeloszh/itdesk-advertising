@@ -13,12 +13,10 @@
     <div>
       <p>
         Przygotowując
-        <router-link to="/audyt-strony"
-          >optymalizację SEO</router-link
-        >, tworzymy unikalne treści, które są najważniejszym czynnikiem
-        wpływającym na pozycję danej witryny w wynikach wyszukiwania.
-        Udoskonalamy kod strony,
-        <a href="https://graficzne.studio/">ulepszamy grafię</a>.
+        <router-link to="/audyt-strony">optymalizację SEO</router-link>,
+        tworzymy unikalne treści, które są najważniejszym czynnikiem wpływającym
+        na pozycję danej witryny w wynikach wyszukiwania. Udoskonalamy kod
+        strony, <a href="https://graficzne.studio/">ulepszamy grafię</a>.
       </p>
     </div>
     <div>

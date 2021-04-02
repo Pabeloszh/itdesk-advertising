@@ -11,7 +11,9 @@
         <router-link to="/">AGENCJA MARKETINGOWA</router-link>
       </div>
       <div class="dropdown" @mouseover="cOver" @mouseout="cOut">
-        <a><span @click="$router.push('/uslugi')">OFERTA</span> <i class="fas fa-caret-down"></i
+        <a
+          ><span @click="$router.push('/uslugi')">OFERTA</span>
+          <i class="fas fa-caret-down"></i
         ></a>
         <div class="offers-dropdown">
           <div>
@@ -89,7 +91,9 @@
     <router-link to="/">Agencja Marketingowa</router-link>
     <router-link to="/uslugi">Oferta</router-link>
     <div class="mobile-offers">
-      <router-link to="/marketing-internetowy">Marketing internetowy</router-link>
+      <router-link to="/marketing-internetowy"
+        >Marketing internetowy</router-link
+      >
       <div>
         <router-link to="/opieka-marketingowa">Opieka marketingowa</router-link>
         <router-link to="/google-ads">Google Ads</router-link>
@@ -100,16 +104,24 @@
         <router-link to="/social-media">Social Media</router-link>
         <router-link to="/marketing-szeptany">Marketing Szeptany</router-link>
       </div>
-      <router-link to="/strony-i-sklepy-internetowe">Strony i sklepy internetowe</router-link>
+      <router-link to="/strony-i-sklepy-internetowe"
+        >Strony i sklepy internetowe</router-link
+      >
       <div>
-        <router-link to="/systemy-zarzadzania-trescia-cms">Systemy zarządzania treścią CMS</router-link>
+        <router-link to="/systemy-zarzadzania-trescia-cms"
+          >Systemy zarządzania treścią CMS</router-link
+        >
         <router-link to="/strony-internetowe">Strony internetowe</router-link>
-        <router-link to="/opieka-nad-strona-www">Opieka nad stroną WWW</router-link>
+        <router-link to="/opieka-nad-strona-www"
+          >Opieka nad stroną WWW</router-link
+        >
         <router-link to="/sklep-sote">Sote Shop</router-link>
         <router-link to="/sklep-presta">Presta Shop</router-link>
         <router-link to="/sklep-magento">Magento</router-link>
       </div>
-      <router-link to="/oprogramowanie-dedykowane">Oprogramowanie dedykowane</router-link>
+      <router-link to="/oprogramowanie-dedykowane"
+        >Oprogramowanie dedykowane</router-link
+      >
       <div>
         <router-link to="/hosting-i-domeny">Hosting i domeny</router-link>
         <router-link to="/aplikacje-mobilne">Aplikacje Mobilne</router-link>
@@ -156,17 +168,16 @@ export default {
     window.removeEventListener("resize", this.resizeToggle);
   },
   methods: {
-    colorChange(){
+    colorChange() {
       this.navbarToggler = true;
     },
     handleScroll() {
       if (window.scrollY > 0) {
         this.navbarToggler = true;
-        document.querySelector(".offers-dropdown").style.top = '55px';
-      }
-      else if (!this.menuToggler && window.scrollY === 0) {
+        document.querySelector(".offers-dropdown").style.top = "55px";
+      } else if (!this.menuToggler && window.scrollY === 0) {
         this.navbarToggler = false;
-        document.querySelector(".offers-dropdown").style.top = '80px';
+        document.querySelector(".offers-dropdown").style.top = "80px";
       }
     },
     toggleMenu() {

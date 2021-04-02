@@ -38,36 +38,37 @@
 <script>
 export default {
   name: "ContactForm",
-  mounted(){
-    if(this.$route.path === '/wycena'){
-      document.querySelector('.cform-container').classList.add('animate');
+  mounted() {
+    if (this.$route.path === "/wycena") {
+      document.querySelector(".cform-container").classList.add("animate");
     }
     window.addEventListener("scroll", this.animateOnScroll);
   },
-  unmounted(){
+  unmounted() {
     window.removeEventListener("scroll", this.animateOnScroll);
   },
-  methods:{
-    inView(){
-      var element = document.querySelector('.cform-container');
+  methods: {
+    inView() {
+      var element = document.querySelector(".cform-container");
       var elementHeight = element.clientHeight;
       var windowHeight = window.innerHeight;
       var scrollY = window.scrollY || window.pageYOffset;
-      
+
       var scrollPosition = scrollY + windowHeight;
-      var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
-      
+      var elementPosition =
+        element.getBoundingClientRect().top + scrollY + elementHeight;
+
       if (scrollPosition > elementPosition * 0.8) {
         return true;
       }
       return false;
     },
-    animateOnScroll(){
+    animateOnScroll() {
       if (this.inView()) {
-        document.querySelector('.cform-container').classList.add('animate');
+        document.querySelector(".cform-container").classList.add("animate");
       }
     }
-  },
+  }
 };
 </script>
 <style scoped lang="scss" src="./ContactForm.style.scss"></style>

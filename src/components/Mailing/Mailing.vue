@@ -66,8 +66,7 @@
         <h3>Powiadomienia z bloga</h3>
         <p>
           Jako content marketing prowadzisz
-          <router-link to="/blog"
-            >bloga firmowego</router-link>
+          <router-link to="/blog">bloga firmowego</router-link>
           lub
           <a
             href="https://www.facebook.com/itDesk-agencja-interaktywna-106076080801166"

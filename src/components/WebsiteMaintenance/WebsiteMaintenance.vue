@@ -14,9 +14,8 @@
         dedykowanym (intranet, extranet, b2b, systemami opartymi o PHP i SQL)
         oraz systemami gotowymi (WordPress, Drupal,
         <router-link to="/sklep-magento">Magento</router-link>,
-        <router-link to="/sklep-presta"
-          >PrestaShop</router-link
-        >, Sote, Shopper).
+        <router-link to="/sklep-presta">PrestaShop</router-link>, Sote,
+        Shopper).
       </p>
     </div>
     <div>

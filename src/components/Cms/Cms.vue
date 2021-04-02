@@ -8,9 +8,7 @@
         <a href="https://www.drupal.org.pl/">Drupal</a> czy
         <a href="https://www.joomla.org/">Joomla</a>, które są świetnie
         przygotowane pod
-        <router-link to="/pozycjonowanie"
-          >pozycjonowanie</router-link
-        >
+        <router-link to="/pozycjonowanie">pozycjonowanie</router-link>
         stron.
       </p>
       <p>Nasze systemy zarządzania treścią są:</p>
