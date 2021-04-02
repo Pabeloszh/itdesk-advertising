@@ -125,7 +125,7 @@
 </template>
 <script>
 export default {
-  name: "OffersBox",
+  name: "OffersBox"
 };
 </script>
 <style lang="scss" src="./OffersBox.style.scss"></style>

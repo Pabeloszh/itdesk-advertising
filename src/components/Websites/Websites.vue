@@ -9,8 +9,7 @@
         nim możesz pozyskać zainteresowanych odbiorców, klientów, kontrahentów!
       </p>
       <p>
-        <router-link
-          to="=/strony-i-sklepy-internetowe"
+        <router-link to="=/strony-i-sklepy-internetowe"
           >Nasza oferta</router-link
         >
         pokazuje, że profesjonalna, skuteczna strona internetowa może być w

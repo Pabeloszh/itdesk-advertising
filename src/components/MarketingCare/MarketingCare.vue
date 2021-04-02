@@ -23,7 +23,8 @@
           <strong>stałą liczbę godzin</strong> pracy.
         </p>
         <p>
-          Mamy dla Ciebie przygotowany <a href="https://informatyk360.pl/">HelpDesk</a>, który gwarantuje
+          Mamy dla Ciebie przygotowany
+          <a href="https://informatyk360.pl/">HelpDesk</a>, który gwarantuje
           przejrzystość i transparentność działań.
         </p>
         <p>Całość podsumowujemy na comiesięcznych spotkaniach.</p>

@@ -1,8 +1,9 @@
-import {createStore} from 'vuex'
+import { createStore } from "vuex";
+import axios from "axios"
 
 const store = createStore({
-  state(){
-    return{
+  state() {
+    return {
       posts: [
         {
           img:
@@ -54,23 +55,29 @@ const store = createStore({
           desc:
             "W dzisiejszych czasach, kiedy w Polsce jest ponad 30,5 miliona użytkowników internetowych każda firma, która chce się rozwijać, musi zaistnieć w Internecie. Kiedyś wystarczało posiadać wizytówkę firmową z telefonem i adresem, lecz w 2020 roku to już zdecydowanie za..."
         }
-      ]
-      // user:{
-      //   firstName: "Kamil",
-      //   lastName: "TumuLec",
-      //   phone: "+48 213 742 069",
-      //   lang: "PL",
-      //   avatar: "https://randomuser.me/api/portraits/men/10.jpg",
-      //   email: "wislachuj@gmail.com",
-      //   password: "123"
-      // }
-    }
+      ],
+      blogPosts:[],
+      postsLoaded: false,
+    };
   },
   mutations: {
-    show(state){
-      console.log(state)
-    }}
-
-})
+    show(state) {
+      console.log(state);
+    },
+    SAVE_POSTS(state, posts) {
+      state.blogPosts = posts;
+      state.postsLoaded = true;
+    }
+  },
+  actions:{
+    loadPost({commit}) {
+      axios.get('https://cdn.contentful.com/spaces/zr4nt40z5mav/environments/master/entries?access_token=xJofx5ouX0Xpco1qx-8CuO_IGVDfD5xtA71aJt_iUVM').then(result => {
+        commit('SAVE_POSTS', result);
+      }).catch(error => {
+        throw new Error(`API ${error}`);
+      });
+    }
+  },
+});
 
 export default store;

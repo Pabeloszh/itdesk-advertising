@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <router-view></router-view>
+  <router-view :key="$route.path"></router-view>
   <Footer />
 </template>
 
@@ -14,7 +14,8 @@ export default {
   components: {
     Navbar,
     Footer
-  }
+  },
+  
 };
 </script>
 
