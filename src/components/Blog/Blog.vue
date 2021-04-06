@@ -15,7 +15,6 @@
   </div>
 </template>
 <script>
-// import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 import { BLOCKS, MARKS } from '@contentful/rich-text-types';
 import  {mapState, mapMutations} from "vuex"
 import BlogCard from "./BlogCard/BlogCard.vue";
@@ -24,27 +23,21 @@ export default {
   name: "Blog",
   components: {
     BlogCard,
-    // RichTextRenderer
   },
   computed: {
-    ...mapState(["posts", "blogPosts","postsLoaded"])
+    ...mapState(["blogPosts","postsLoaded"])
   },
   created() {
     this.$store.dispatch("loadPost");
   },
   mounted() {
-    // console.log(this.blogPosts.data.items)
     window.addEventListener("scroll", this.animateOnScroll);
-    // this.cardProps = {id:}
   },
   unmounted() {
     window.removeEventListener("scroll", this.animateOnScroll);
   },
   methods: {
-    ...mapMutations(["posts", "blogPosts", "postsLoaded"]),
-    clac(id){
-      console.log(id)
-    },
+    ...mapMutations(["blogPosts", "postsLoaded"]),
     renderMarks() {
         return {
             [MARKS.BOLD]: (text, key) => ('custom-bold', { key: key }, text)

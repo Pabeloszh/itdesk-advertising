@@ -27,11 +27,24 @@
             margin: 50px 0 10px;
         }
         p{
+            word-wrap: break-word;
             margin: 15px 0;
             line-height: 1.8em;
             font-size:16px;
             font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
             color: #353740;
+        }
+        .bpost-nav{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            p{
+                font-weight: 600;
+                color: #000000;
+                letter-spacing: 2px;
+                cursor: pointer;
+                font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+            }
         }
     }
     .post-list{
@@ -64,6 +77,31 @@
                     font-size:18px;
                     line-height: 1.3em;
                 }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1024px){
+    .bpost-container{
+        flex-direction: column;
+        .post, .post-list{
+            width:100%;
+            padding:0;
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .bpost-title{
+        padding: 250px 2% 300px 2%;
+        h1{
+            font-size: 30px;
+        }
+    }
+    .bpost-container{
+        .post{
+            .bpost-nav{
+                flex-direction: column;
             }
         }
     }
