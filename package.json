@@ -13,6 +13,7 @@
     "axios": "^0.21.1",
     "contentful-rich-text-vue-renderer": "^3.0.0-rc.0",
     "core-js": "^3.6.5",
+    "dotenv": "^8.2.0",
     "vue": "^3.0.0",
     "vue-glide-js": "^1.3.14",
     "vue-router": "^4.0.0-0",

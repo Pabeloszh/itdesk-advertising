@@ -2,10 +2,11 @@
   <Title :groupedProps="titleData" />
   <div class="blog-container">
     <div class="blog-desc">
-      <BlogCard
-        v-for="(post, index) in posts"
+       <BlogCard
+        v-for="(item, index) in blogPosts.data.items"
         :key="index"
-        :groupedProps="post"
+        @click="$router.push({ name: 'BlogPost', params: { post: item.fields.url } })"
+        :groupedProps="{img: item.fields.mainPhoto, title: item.fields.title, desc: item.fields.blogPost.content[0].content[0].value}"
       />
     </div>
   </div>
@@ -22,7 +23,13 @@ export default {
     BlogCard
   },
   computed: {
-    ...mapState(["posts"])
+    ...mapState(["blogPosts","postsLoaded"])
+  },
+  created() {
+    this.$store.dispatch("loadPost");
+  },
+  methods: {
+    ...mapMutations(["blogPosts", "postsLoaded"]),
   },
   data() {
     return {
@@ -36,9 +43,7 @@ export default {
       },
     };
   },
-  methods: {
-    ...mapMutations(["posts"])
-  }
+  
 };
 </script>
 

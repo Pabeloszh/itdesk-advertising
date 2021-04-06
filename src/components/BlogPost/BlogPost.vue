@@ -6,8 +6,8 @@
         <div class="post">
             <RichTextRenderer :document='post.blogPost'/>
             <div class="bpost-nav">
-                <p @click="prev">POPRZEDNI WPIS</p>
-                <p @click="next">NASTĘPNY WPIS</p>
+                <p :style="[blogPosts.data.items.map(post => post.fields.url).indexOf($route.params.post) !== blogPosts.data.items.length - 1 ? { visibility: 'visible' } : { visibility: 'hidden' }]" @click="prev"><i class="fas fa-long-arrow-alt-left"></i> POPRZEDNI WPIS</p>
+                <p :style="[blogPosts.data.items.map(post => post.fields.url).indexOf($route.params.post) !== 0 ? { visibility: 'visible' } : { visibility: 'hidden' }]" @click="next">NASTĘPNY WPIS <i class="fas fa-long-arrow-alt-right"></i></p>
             </div>
         </div>
         <div class="post-list">
@@ -47,10 +47,13 @@ export default {
     methods:{
         ...mapMutations(['blogPosts', 'postsLoaded']),
         prev(){
-            console.log(this.$route.params.post, this.thumbnails[0].fields.url)
+            let index = this.blogPosts.data.items.map(post => post.fields.url).indexOf(this.$route.params.post)
+            this.$router.push({ name: 'BlogPost', params: { post: this.blogPosts.data.items[index + 1].fields.url } })
+            console.log(index, this.blogPosts.data.items.length - 1)
         },
         next(){
-            console.log('next')
+            let index = this.blogPosts.data.items.map(post => post.fields.url).indexOf(this.$route.params.post)
+            this.$router.push({ name: 'BlogPost', params: { post: this.blogPosts.data.items[index - 1].fields.url } })
         },
         renderMarks() {
             return {
