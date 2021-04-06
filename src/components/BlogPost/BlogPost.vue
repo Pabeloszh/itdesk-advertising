@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import RichTextRenderer from 'contentful-rich-text-vue-renderer';
-import { BLOCKS, MARKS } from '@contentful/rich-text-types';
 import  {mapState, mapMutations} from "vuex"
+import { BLOCKS, MARKS } from '@contentful/rich-text-types';
+import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 export default {
     name:"BlogPost",
     components:{
