@@ -341,12 +341,12 @@
         }
     }
     .hosting-email{
-        table{
+        .table{
             .col:nth-child(-n+3){
                 border-right: none;
             }
             .col:nth-child(1), .col:nth-child(3){
-                border-right:2px solid rgb(216, 216, 216);
+                border-right:2px solid #f7f7f7;
             }
         }
     }
