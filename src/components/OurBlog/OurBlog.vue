@@ -1,6 +1,6 @@
 <template>
   <Title :groupedProps="titleData" />
-  <div class="blog-container">
+  <div class="blog-container" v-if="postsLoaded">
     <div class="blog-desc">
        <BlogCard
         v-for="(item, index) in blogPosts.data.items"

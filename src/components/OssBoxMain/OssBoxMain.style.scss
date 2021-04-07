@@ -45,6 +45,10 @@
         padding: 60px 10%;
         display:grid;
         grid-template-columns: 100%;
+        .box{
+            border-right:none;
+            border-bottom:none;
+        }
         .box:nth-child(2){
             border-right:none;
             border-left:none;

@@ -27,10 +27,12 @@ import VideoMarketing from "@/components/VideoMarketing/VideoMarketing.vue";
 import Cloud from "@/components/Cloud/Cloud.vue";
 import Training from "@/components/Training/Training.vue";
 import OurBlog from "@/components/OurBlog/OurBlog.vue";
+import BlogPost from "@/components/BlogPost/BlogPost.vue"
 import AboutCompany from "@/components/AboutCompany/AboutCompany.vue";
+import Portfolio from "@/components/Portfolio/Portfolio.vue";
+import Project from "@/components/Project/Project.vue";
 import Contact from "@/components/Contact/Contact.vue";
 import ContactForm from "@/components/ContactForm/ContactForm.vue";
-import BlogPost from "@/components/BlogPost/BlogPost.vue"
 
 const routes = [
   {
@@ -189,6 +191,16 @@ const routes = [
     path: "/o-firmie",
     name: "AboutCompany",
     component: AboutCompany
+  },
+  {
+    path: "/portfolio",
+    name: "Portfolio",
+    component: Portfolio
+  },
+  {
+    path: "/project/:name",
+    name: "Project",
+    component: Project
   },
   {
     path: "/kontakt",
