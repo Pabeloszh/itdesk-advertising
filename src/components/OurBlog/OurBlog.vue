@@ -2,11 +2,17 @@
   <Title :groupedProps="titleData" />
   <div class="blog-container" v-if="postsLoaded">
     <div class="blog-desc">
-       <BlogCard
+      <BlogCard
         v-for="(item, index) in blogPosts.data.items"
         :key="index"
-        @click="$router.push({ name: 'BlogPost', params: { post: item.fields.url } })"
-        :groupedProps="{img: item.fields.mainPhoto, title: item.fields.title, desc: item.fields.blogPost.content[0].content[0].value}"
+        @click="
+          $router.push({ name: 'BlogPost', params: { post: item.fields.url } })
+        "
+        :groupedProps="{
+          img: item.fields.mainPhoto,
+          title: item.fields.title,
+          desc: item.fields.blogPost.content[0].content[0].value
+        }"
       />
     </div>
   </div>
@@ -23,13 +29,13 @@ export default {
     BlogCard
   },
   computed: {
-    ...mapState(["blogPosts","postsLoaded"])
+    ...mapState(["blogPosts", "postsLoaded"])
   },
   created() {
     this.$store.dispatch("loadPost");
   },
   methods: {
-    ...mapMutations(["blogPosts", "postsLoaded"]),
+    ...mapMutations(["blogPosts", "postsLoaded"])
   },
   data() {
     return {
@@ -40,10 +46,9 @@ export default {
         },
         desc: "Nasz",
         title: "BLOG"
-      },
+      }
     };
-  },
-  
+  }
 };
 </script>
 

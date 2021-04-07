@@ -12,15 +12,42 @@
         stron.
       </p>
       <p>Nasze systemy zarządzania treścią są:</p>
-      <p>nowoczesne, zgodne z obowiązującymi trendami</p>
-      <p>dostosowane do najczęściej stosowanych rozdzielczości monitora</p>
-      <p>zgodne z zasadami UX</p>
-      <p>przyjazne wyszukiwarkom</p>
-      <p>atrakcyjne dla odbiorców</p>
-      <p>czytelne i przejrzyste</p>
-      <p>z dedykowaną grafiką</p>
-      <p>wykonane w technologii responsive</p>
-      <p>przygotowane pod pozycjonowanie</p>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>nowoczesne, zgodne z obowiązującymi trendami</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>dostosowane do najczęściej stosowanych rozdzielczości monitora</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>zgodne z zasadami UX</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>przyjazne wyszukiwarkom</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>atrakcyjne dla odbiorców</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>czytelne i przejrzyste</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>z dedykowaną grafiką</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>wykonane w technologii responsive</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>przygotowane pod pozycjonowanie</p>
+      </div>
     </div>
     <div>
       <img

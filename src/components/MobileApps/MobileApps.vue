@@ -9,9 +9,7 @@
         >Android</a
       >, oraz na tablice interaktywne.<br />
       Współpracujemy z
-      <a href="https://agencja-interaktywna.opole.pl/project/gtv-bus/"
-        >klientami polskimi</a
-      >
+      <router-link to="/project/gtv-bus">klientami polskimi</router-link>
       i zagranicznymi, mamy bogate doświadczenie w tworzeniu aplikacji.
     </p>
     <div class="apps-info">

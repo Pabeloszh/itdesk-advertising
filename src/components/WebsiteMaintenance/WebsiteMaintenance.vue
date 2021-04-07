@@ -20,30 +20,60 @@
     </div>
     <div>
       <h2>W ramach usługi zapewniamy</h2>
-      <p>Dedykowany opiekun do Twojej strony internetowej</p>
-      <p>Bezpłatne wykonywanie kopii zapasowych systemu codziennie</p>
-      <p>
-        Bezpłatne aktualizacje zabezpieczeń systemu co najmniej raz na kwartał
-      </p>
-      <p>Bezpłatne usuwanie awarii systemu</p>
-      <p>Bezpłatne utrzymanie wersji testowej systemu</p>
-      <p>
-        Przedłużenie gwarancji na stronę WWW w przypadku gdy witryna została
-        wykonana w itDesk
-      </p>
-      <p>
-        HelpDesk i transparentność – system do ewidencji zgłoszeń, komunikacji
-        oraz raportowania czasu
-      </p>
-      <p>
-        Gwarantowany czas reakcji SLA na awarie do 24 godzin – w przypadku
-        awarii uniemożliwiającej wyświetlenie strony lub dokonanie zakupu
-      </p>
-      <p>Stała zrabatowana stawka na realizowane prace</p>
-      <p>
-        Gwarantowana liczba godzin do wykorzystania na prace w serwisie
-        internetowym
-      </p>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>Dedykowany opiekun do Twojej strony internetowej</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>Bezpłatne wykonywanie kopii zapasowych systemu codziennie</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>
+          Bezpłatne aktualizacje zabezpieczeń systemu co najmniej raz na kwartał
+        </p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>Bezpłatne usuwanie awarii systemu</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>Bezpłatne utrzymanie wersji testowej systemu</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>
+          Przedłużenie gwarancji na stronę WWW w przypadku gdy witryna została
+          wykonana w itDesk
+        </p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>
+          HelpDesk i transparentność – system do ewidencji zgłoszeń, komunikacji
+          oraz raportowania czasu
+        </p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>
+          Gwarantowany czas reakcji SLA na awarie do 24 godzin – w przypadku
+          awarii uniemożliwiającej wyświetlenie strony lub dokonanie zakupu
+        </p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>Stała zrabatowana stawka na realizowane prace</p>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <p>
+          Gwarantowana liczba godzin do wykorzystania na prace w serwisie
+          internetowym
+        </p>
+      </div>
     </div>
   </div>
   <div class="table-cont">

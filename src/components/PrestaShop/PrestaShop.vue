@@ -11,18 +11,48 @@
     <div class="pshop-box">
       <div>
         <h3>Główne cechy Presta Shop</h3>
-        <p>system lekki i łatwy w konfiguracji</p>
-        <p>prosty w obsłudze panel administracyjny</p>
-        <p>idealny do sprzedaży polskiej i zagranicznej</p>
-        <p>wydajny, nie wymaga dużych zasobów serwera</p>
-        <p>posiada dużo wbudowanych funkcjonalności</p>
-        <p>idealny zarówno do małych, jak i większych sklepów</p>
-        <p>możliwość tworzenia sklepów w różnych wersjach językowych</p>
-        <p>obsługa wielu walut</p>
-        <p>dodatki</p>
-        <p>
-          integracja z programami księgowo-magazynowymi Subiekt, WF-MAG, Enova
-        </p>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>system lekki i łatwy w konfiguracji</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>prosty w obsłudze panel administracyjny</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>idealny do sprzedaży polskiej i zagranicznej</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>wydajny, nie wymaga dużych zasobów serwera</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>posiada dużo wbudowanych funkcjonalności</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>idealny zarówno do małych, jak i większych sklepów</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>możliwość tworzenia sklepów w różnych wersjach językowych</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>obsługa wielu walut</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>dodatki</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>
+            integracja z programami księgowo-magazynowymi Subiekt, WF-MAG, Enova
+          </p>
+        </div>
       </div>
       <div>
         <h3>Integracja PrestaShop</h3>
@@ -34,13 +64,34 @@
           Nasi eksperci pokażą, że integracja PrestaShop z subiektem, to same
           korzyści:
         </p>
-        <p>eksport produktów z WF-Mag do sklepu</p>
-        <p>dodawanie nowych produktów automatycznie po dodaniu w WF-Mag</p>
-        <p>automatyczne tworzenie i przypisywanie producentów</p>
-        <p>obsługa i edycja wariantów produktu</p>
-        <p>aktualizowanie statusów zamówień w sklepie</p>
-        <p>synchronizacja danych</p>
-        <p>import zamówień do WF-MAG</p>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>eksport produktów z WF-Mag do sklepu</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>dodawanie nowych produktów automatycznie po dodaniu w WF-Mag</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>automatyczne tworzenie i przypisywanie producentów</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>obsługa i edycja wariantów produktu</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>aktualizowanie statusów zamówień w sklepie</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>synchronizacja danych</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>import zamówień do WF-MAG</p>
+        </div>
       </div>
     </div>
   </div>

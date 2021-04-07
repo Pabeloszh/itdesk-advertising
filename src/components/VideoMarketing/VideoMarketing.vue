@@ -22,9 +22,7 @@
         >
         i zainteresowanie oferowanym asortymentem, pozwalają w pełni wykorzystać
         potencjał w środowisku internetowym. Są doskonale przygotowane pod
-        <a href="https://agencja-interaktywna.opole.pl/pozycjonowanie/"
-          >pozycjonowanie</a
-        >.
+        <router-link to="/pozycjonowanie">pozycjonowanie</router-link>.
       </p>
     </div>
   </div>

@@ -29,12 +29,19 @@
         display:grid;
         grid-template-columns: repeat(2, calc(50% - 10px));
         gap:20px;
-        h4{
-            font-weight: 400;
-            color: #353740;
-            font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
-            line-height: 1.2em;
-            font-size:24px;
+        div{
+            display:flex;
+            i{
+                line-height: 1.6em;
+                margin-right:15px;
+            }
+            h4{
+                font-weight: 400;
+                color: #353740;
+                font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+                line-height: 1.2em;
+                font-size:24px;
+            }
         }
     }
 }

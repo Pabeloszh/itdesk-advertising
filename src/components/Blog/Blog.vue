@@ -8,24 +8,30 @@
       <BlogCard
         v-for="(item, index) in blogPosts.data.items"
         :key="index"
-        @click="$router.push({ name: 'BlogPost', params: { post: item.fields.url } })"
-        :groupedProps="{img: item.fields.mainPhoto, title: item.fields.title, desc: item.fields.blogPost.content[0].content[0].value}"
+        @click="
+          $router.push({ name: 'BlogPost', params: { post: item.fields.url } })
+        "
+        :groupedProps="{
+          img: item.fields.mainPhoto,
+          title: item.fields.title,
+          desc: item.fields.blogPost.content[0].content[0].value
+        }"
       />
     </div>
   </div>
 </template>
 <script>
-import { BLOCKS, MARKS } from '@contentful/rich-text-types';
-import  {mapState, mapMutations} from "vuex"
+import { BLOCKS, MARKS } from "@contentful/rich-text-types";
+import { mapState, mapMutations } from "vuex";
 import BlogCard from "./BlogCard/BlogCard.vue";
 
 export default {
   name: "Blog",
   components: {
-    BlogCard,
+    BlogCard
   },
   computed: {
-    ...mapState(["blogPosts","postsLoaded"])
+    ...mapState(["blogPosts", "postsLoaded"])
   },
   created() {
     this.$store.dispatch("loadPost");
@@ -39,14 +45,16 @@ export default {
   methods: {
     ...mapMutations(["blogPosts", "postsLoaded"]),
     renderMarks() {
-        return {
-            [MARKS.BOLD]: (text, key) => ('custom-bold', { key: key }, text)
-        };
+      return {
+        [MARKS.BOLD]: (text, key) => ("custom-bold", { key: key }, text)
+      };
     },
     renderNodes() {
-        return {
-            [BLOCKS.PARAGRAPH]: (node, key, next) => ('custom-paragraph', { key: key }, next(node.content, key, next))
-        }
+      return {
+        [BLOCKS.PARAGRAPH]: (node, key, next) => (
+          "custom-paragraph", { key: key }, next(node.content, key, next)
+        )
+      };
     },
     inView() {
       var element = document.querySelector(".blog-container");

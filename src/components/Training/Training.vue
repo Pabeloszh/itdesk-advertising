@@ -13,9 +13,7 @@
         <p>
           W każdej firmie powinien być przynajmniej jeden pracownik, który
           dobrze zna
-          <a href="https://agencja-interaktywna.opole.pl/google-ads/"
-            >Google Ads</a
-          >.
+          <router-link to="/google-ads">Google Ads</router-link>.
         </p>
         <p>
           Nasze warsztaty zostały przygotowane w taki sposób, aby pokazać Wam
@@ -23,7 +21,25 @@
           i późniejsze zarządzanie nie będzie wymagać dużych nakładów czasu.
         </p>
       </div>
-      <div></div>
+      <div class="images">
+        <img
+          class="active"
+          src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/04/szkolenia1-scaled.jpg"
+          alt=""
+        />
+        <img
+          src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/04/szkolenia2-scaled.jpg"
+          alt=""
+        />
+        <img
+          src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/04/szkolenia3-scaled.jpg"
+          alt=""
+        />
+        <img
+          src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/04/szkolenia4-scaled.jpg"
+          alt=""
+        />
+      </div>
     </div>
     <div class="train-box">
       <div>
@@ -74,9 +90,9 @@
           czuwają nad realizacją marketingu w sieci,
           <strong>specjalistom ds. marketingu</strong>, którzy chcą podnieść
           swoje kwalifikacje lub zweryfikować swoje działania oraz wszystkim
-          osobom, które chcą samodzielnie prowadzić kampanie/<a
-            href="https://agencja-interaktywna.opole.pl/social-media/"
-            >fanpage firmowy na Facebooku</a
+          osobom, które chcą samodzielnie prowadzić kampanie/<router-link
+            to="https://agencja-interaktywna.opole.pl/social-media/"
+            >fanpage firmowy na Facebooku</router-link
           >.
         </p>
       </div>
@@ -107,22 +123,45 @@
     <div class="closed-desc">
       <div>
         <h3>Zalety szkoleń zamkniętych</h3>
-        <p>atrakcyjne warunki finansowe</p>
-        <p>
-          małe grupy szkoleniowe, ułatwiają dyskusję i bezpośredni kontakt z
-          prowadzącym
-        </p>
-        <p>
-          dowolny termin i miejsce, wskazane przez firmę (możliwe szkolenia
-          wyjazdowe)
-        </p>
-        <p>poruszane zagadnienia odnoszą się do specyfiki branży i firmy</p>
-        <p>trener uwzględnia charakter grupy docelowej</p>
-        <p>
-          możliwość integracji pracowników; bezpośredni wpływ na poprawę
-          komunikacji w firmie
-        </p>
-        <p>każdy uczestnik otrzymuje imienny certyfikat ukończenia szkolenia</p>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>atrakcyjne warunki finansowe</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>
+            małe grupy szkoleniowe, ułatwiają dyskusję i bezpośredni kontakt z
+            prowadzącym
+          </p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>
+            dowolny termin i miejsce, wskazane przez firmę (możliwe szkolenia
+            wyjazdowe)
+          </p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>poruszane zagadnienia odnoszą się do specyfiki branży i firmy</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>trener uwzględnia charakter grupy docelowej</p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>
+            możliwość integracji pracowników; bezpośredni wpływ na poprawę
+            komunikacji w firmie
+          </p>
+        </div>
+        <div>
+          <i class="far fa-check-square"></i>
+          <p>
+            każdy uczestnik otrzymuje imienny certyfikat ukończenia szkolenia
+          </p>
+        </div>
       </div>
       <div>
         <h3>Proponowane tematy szkoleń</h3>
@@ -151,8 +190,19 @@ export default {
         },
         desc: "Profesjonalne",
         title: "SZKOLENIA MARKETINGOWE"
-      }
+      },
+      counter: 0
     };
+  },
+  mounted() {
+    let images = document.querySelectorAll(".images img");
+
+    setInterval(() => {
+      images.forEach(img => img.classList.remove("active"));
+      if (this.counter < 3) this.counter++;
+      else this.counter = 0;
+      images[this.counter].classList.add("active");
+    }, 5000);
   }
 };
 </script>

@@ -30,13 +30,28 @@
     </div>
     <h2>Po co ,,szeptać''?</h2>
     <div class="whisper-info">
-      <h4>Budowanie pozytywnego wizerunku firmy</h4>
-      <h4>Działania długofalowe</h4>
-      <h4>
-        Zwiększenie ruchu na stronie, które przekłada się na zyski finansowe
-      </h4>
-      <h4>Szybki sposób dotarcia do potencjalnych klientów</h4>
-      <h4>Duża wiarygodność przekazu</h4>
+      <div>
+        <i class="far fa-check-square"></i>
+        <h4>Budowanie pozytywnego wizerunku firmy</h4>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <h4>Działania długofalowe</h4>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <h4>
+          Zwiększenie ruchu na stronie, które przekłada się na zyski finansowe
+        </h4>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <h4>Szybki sposób dotarcia do potencjalnych klientów</h4>
+      </div>
+      <div>
+        <i class="far fa-check-square"></i>
+        <h4>Duża wiarygodność przekazu</h4>
+      </div>
     </div>
   </div>
 </template>
