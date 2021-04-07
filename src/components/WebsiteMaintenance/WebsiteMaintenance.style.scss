@@ -31,16 +31,24 @@
             font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
             margin-bottom:45px;
         }
-        p{
+        div{
             padding: 0 10%;
-            max-width:950px;
-            margin:auto;
-            color: #353740;
-            line-height: 1.6em;
-            font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
-            font-size:22px;
-            margin-bottom:10px;
-            font-weight: 600;
+            display:flex;
+            i{
+                margin-right:20px;
+                line-height: 1.6em;
+                color:#ef7a07;
+            }
+            p{
+                padding:0;
+                max-width:950px;
+                margin-bottom:15px;
+                color: #353740;
+                line-height: 1.6em;
+                font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+                font-size:22px;
+                font-weight: 600;
+            }
         }
     }
 }

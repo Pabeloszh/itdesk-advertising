@@ -22,14 +22,25 @@
                 font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
                 margin-bottom:20px;
             }
-            p{
-                max-width:100%;
-                color: #353740;
-                line-height: 1.6em;
-                font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
-                font-size:16px;
-                margin-bottom:10px;
-                font-weight: 500;
+            div{
+                display:flex;
+                margin-bottom:15px;
+                padding:0;
+                width:95%;
+                i{
+                    margin-right:10px;
+                    line-height: 1.6em;
+                    color:#ef7a07;
+                }
+                p{
+                    margin:0;
+                    max-width:100%;
+                    color: #353740;
+                    line-height: 1.6em;
+                    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+                    font-size:16px;
+                    font-weight: 500;
+                }
             }
         }
         div:nth-child(2){

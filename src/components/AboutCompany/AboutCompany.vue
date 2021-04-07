@@ -16,8 +16,8 @@
         specjalizacją jest&nbsp;dostarczanie kompleksowej obsługi firm w
         internecie. W swojej ofercie posiadamy
         <strong
-          ><a href="https://agencja-interaktywna.opole.pl/uslugi/"
-            >pełen wachlarz usług internetowych</a
+          ><router-link to="/uslugi"
+            >pełen wachlarz usług internetowych</router-link
           >,</strong
         >
         dzięki czemu jesteśmy w stanie zapewnić pełną obsługę nawet najbardziej

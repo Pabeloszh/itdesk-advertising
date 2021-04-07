@@ -8,6 +8,7 @@
         }           
     }
     .train-box:nth-child(1){
+        margin-bottom:45px;
         div{
             h2{
                 font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
@@ -23,16 +24,28 @@
                 line-height: 1.4em;
                 font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
                 font-size:18px;
-                // margin-bottom:20px;
                 font-weight: 500;
             }
         }
         div:nth-child(2){
-            max-height:100%;
-            background: url('https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/04/szkolenia4-scaled.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            position:relative;
+            margin-left:60px;
+            img{
+                transition: all 1000ms ease-in-out;
+                position:absolute;
+                z-index: 0;
+                visibility: hidden;
+                opacity: 0;
+                height:100%;
+                width:100%;
+                object-fit: cover;
+            }
+            .active{
+                transition: all 1000ms ease-in-out;
+                z-index: 1;
+                visibility: visible;
+                opacity: 1;
+            }
         }
     }
 
@@ -144,9 +157,34 @@
         }
         div:first-child{
             margin-right:25px;
+            div{
+                display:flex;
+                margin: 15px 0;
+                i{
+                    line-height: 1.8em;
+                    margin-right:20px;
+                }
+                p{
+                    margin-bottom:0;
+                }
+            }
+            div:last-child{
+                p{
+                    padding: 0;
+                }
+            }
         }
         div:last-child{
             margin-left:25px;
+            p{
+                border-bottom:1px #747d88 solid;
+                margin-bottom:0;
+                padding-bottom:22.5px;
+                padding-top:22.5px;
+            }
+            p:last-child{
+                border-bottom:none;
+            }
         }
     }
 }
@@ -161,7 +199,9 @@
         }
         .train-box:nth-child(1){
             div:nth-child(2){
-                height:300px;
+                margin-left:0px;
+
+                height:400px;
                 margin-bottom:45px;
                 margin-top:25px;
             }

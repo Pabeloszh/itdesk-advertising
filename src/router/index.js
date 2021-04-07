@@ -27,7 +27,7 @@ import VideoMarketing from "@/components/VideoMarketing/VideoMarketing.vue";
 import Cloud from "@/components/Cloud/Cloud.vue";
 import Training from "@/components/Training/Training.vue";
 import OurBlog from "@/components/OurBlog/OurBlog.vue";
-import BlogPost from "@/components/BlogPost/BlogPost.vue"
+import BlogPost from "@/components/BlogPost/BlogPost.vue";
 import AboutCompany from "@/components/AboutCompany/AboutCompany.vue";
 import Portfolio from "@/components/Portfolio/Portfolio.vue";
 import Project from "@/components/Project/Project.vue";
@@ -218,9 +218,9 @@ const router = createRouter({
   scrollBehavior() {
     return { x: 0, y: 0 };
   },
-  mode: 'history',
+  mode: "history",
   history: createWebHistory(process.env.BASE_URL),
-  routes,
+  routes
 });
 
 export default router;
