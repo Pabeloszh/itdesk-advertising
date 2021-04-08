@@ -14,9 +14,8 @@
           Zapewniamy
           <strong
             >doradztwo w zakresie wyboru
-            <a
-              href="https://agencja-interaktywna.opole.pl/domeny-i-certyfikaty-ssl/"
-              >domen</a
+            <router-link to="/domeny-i-certyfikaty-ssl"
+              >domen</router-link
             ></strong
           >
           internetowych oraz ich pełną obsługę.
