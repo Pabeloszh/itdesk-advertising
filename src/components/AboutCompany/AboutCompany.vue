@@ -28,7 +28,7 @@
   <div class="acomp-title">
     <h2>Jak działa<br />nasza Agencja<br />Marketingowa</h2>
   </div>
-  <div class="acomp-container" :style="{height:(ourSteps.data.items.length * 225) + 'px'}">
+  <div class="acomp-container" :style="{height:stepsLoaded ? (ourSteps.data.items.length * 225) : 1800 + 'px'}">
     <span id="dot"></span>
     <div class="flexbox">
       <div class="box" v-if="stepsLoaded">
@@ -85,7 +85,8 @@ export default {
       dotPos: 0,
       pos: 0,
       top: 0,
-      bottom: 0
+      bottom: 0,
+      scrollReady: false,
     };
   },
   computed: {
@@ -150,9 +151,18 @@ export default {
     stepsLoaded: {
       handler: function() {
         if (this.stepsLoaded) {
+          this.scrollReady = true
           console.log(this.ourSteps.data.items.sort((a, b) =>{
             return b.fields.id - a.fields.id
           }))
+        }
+      },
+      immediate: true
+    },
+    scrollReady: {
+      handler: function() {
+        if (this.stepsLoaded) {
+          console.log(this.scrollReady)
         }
       },
       immediate: true
