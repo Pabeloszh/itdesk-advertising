@@ -7,7 +7,9 @@ const store = createStore({
       blogPosts: [],
       postsLoaded: false,
       ourProjects: [],
-      projectsLoaded: false
+      projectsLoaded: false,
+      ourSteps: [],
+      stepsLoaded: false
     };
   },
   mutations: {
@@ -21,6 +23,10 @@ const store = createStore({
     SAVE_PROJECTS(state, posts) {
       state.ourProjects = posts;
       state.projectsLoaded = true;
+    },
+    SAVE_STEPS(state, posts) {
+      state.ourSteps = posts;
+      state.stepsLoaded = true;
     }
   },
   actions: {
@@ -31,7 +37,6 @@ const store = createStore({
         )
         .then(result => {
           commit("SAVE_POSTS", result);
-          console.log(result);
         })
         .catch(error => {
           throw new Error(`API ${error}`);
@@ -44,7 +49,18 @@ const store = createStore({
         )
         .then(result => {
           commit("SAVE_PROJECTS", result);
-          console.log(result);
+        })
+        .catch(error => {
+          throw new Error(`API ${error}`);
+        });
+    },
+    loadSteps({ commit }) {
+      axios
+        .get(
+          `https://cdn.contentful.com/spaces/${process.env.VUE_APP_CONTENTFULL_SPACE_ID}/environments/master/entries?access_token=${process.env.VUE_APP_CONTENTFULL_API_KEY}&content_type=itDeskSteps`
+        )
+        .then(result => {
+          commit("SAVE_STEPS", result);
         })
         .catch(error => {
           throw new Error(`API ${error}`);

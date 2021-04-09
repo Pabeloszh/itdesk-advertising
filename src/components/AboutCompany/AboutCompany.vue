@@ -28,131 +28,42 @@
   <div class="acomp-title">
     <h2>Jak działa<br />nasza Agencja<br />Marketingowa</h2>
   </div>
-  <div class="acomp-container">
+  <div class="acomp-container" :style="{height:(ourSteps.data.items.length * 225) + 'px'}">
     <span id="dot"></span>
     <div class="flexbox">
-      <div class="box">
-        <div class="info">
-          <p>KROK 2</p>
+      <div class="box" v-if="stepsLoaded">
+        <div class="info" :style="{top: item.fields.id * (100/(ourSteps.data.items.length + 1)) + '%'}" v-for="(item, index) in ourSteps.data.items.sort((a, b) =>{
+            return a.fields.id - b.fields.id
+          })" :key="index">
+          <p>{{`Krok ` + item.fields.id}}</p>
           <h2>
-            Hosting
-            <p>serwer hostingowy oraz skrzynki pocztowe</p>
-          </h2>
-        </div>
-        <div class="info">
-          <p>KROK 4</p>
-          <h2>
-            Pozycjonowanie
-            <p>
-              optymalizacja strony internetowej pod kątem pozycjonowania w
-              wyszukiwarkach
-            </p>
-          </h2>
-        </div>
-        <div class="info">
-          <p>Krok 6</p>
-          <h2>
-            Google Ads
-            <p>reklama w wyszukiwarce Google Ads</p>
-          </h2>
-        </div>
-        <div class="info">
-          <p>Krok 8</p>
-          <h2>
-            Konwersja
-            <p>
-              optymalizacja strony internetowej pod kątem użyteczności,
-              zwiększania poziomu konwersji i wartości koszyka
-            </p>
+            {{item.fields.title}}
+            <p>{{item.fields.desc}}</p>
           </h2>
         </div>
       </div>
-      <div class="box">
-        <div class="info">
-          <p>KROK 1</p>
-          <h2>Rezerwacja<br />domeny</h2>
-        </div>
-        <div class="info">
-          <p>KROK 2</p>
+      <div class="box" v-if="stepsLoaded">
+        <div class="info" :style="{top: item.fields.id * (100/(ourSteps.data.items.length + 1)) + '%'}" v-for="(item, index) in ourSteps.data.items.sort((a, b) =>{
+            return a.fields.id - b.fields.id
+          })" :key="index">
+          <p>{{`Krok ` + item.fields.id}}</p>
           <h2>
-            Hosting
-            <p>serwer hostingowy oraz skrzynki pocztowe</p>
-          </h2>
-        </div>
-        <div class="info">
-          <p>KROK 3</p>
-          <h2>
-            Strona / Sklep
-            <p>
-              projekt strony internetowej lub portalu (np. społecznościowego),
-              wdrożenie sklepu internetowego dostosowanego do potrzeb klienta
-            </p>
-          </h2>
-        </div>
-        <div class="info">
-          <p>KROK 4</p>
-          <h2>
-            Pozycjonowanie
-            <p>
-              optymalizacja strony internetowej pod kątem pozycjonowania w
-              wyszukiwarkach
-            </p>
-          </h2>
-        </div>
-        <div class="info">
-          <p>KROK 5</p>
-          <h2>
-            Analiza
-            <p>
-              monitoring strony internetowej pod kątem odwiedzin, najlepszych i
-              najgorszych treści, słów kluczowych – Google Analytics
-            </p>
-          </h2>
-        </div>
-        <div class="info">
-          <p>Krok 6</p>
-          <h2>
-            Google Ads
-            <p>reklama w wyszukiwarce Google Ads</p>
-          </h2>
-        </div>
-        <div class="info">
-          <p>KROK 7</p>
-          <h2>
-            Kampania<br />REKLAMOWA
-            <p>
-              – kampania reklamowa w internecie (banery reklamowe, marketing
-              szeptany, mailing, reklama na portalach branżowych, portale
-              YouTube, Facebook, Twitter, fora i blogi internetowe)
-            </p>
-          </h2>
-        </div>
-        <div class="info">
-          <p>Krok 8</p>
-          <h2>
-            Konwersja
-            <p>
-              optymalizacja strony internetowej pod kątem użyteczności,
-              zwiększania poziomu konwersji i wartości koszyka
-            </p>
+            {{item.fields.title}}
+            <p>{{item.fields.desc}}</p>
           </h2>
         </div>
       </div>
     </div>
-    <div class="div">
-      <span class="dot"><i class="far fa-lightbulb"></i></span>
-      <span class="dot"><i class="fas fa-inbox"></i></span>
-      <span class="dot"><i class="far fa-image"></i></span>
-      <span class="dot"><i class="far fa-file-alt"></i></span>
-      <span class="dot"><i class="fas fa-balance-scale-right"></i></span>
-      <span class="dot"><i class="fas fa-dollar-sign"></i></span>
-      <span class="dot"><i class="fas fa-globe"></i></span>
-      <span class="dot"><i class="far fa-thumbs-up"></i></span>
+    <div class="div" v-if="stepsLoaded">
+      <span class="dot" :style="{top: item.fields.id * (100/(ourSteps.data.items.length + 1)) + '%'}" v-for="(item, index) in ourSteps.data.items.sort((a, b) =>{
+            return a.fields.id - b.fields.id
+          })" :key="index"><i :class="item.fields.iconClass"></i></span>
     </div>
   </div>
   <ContactForm />
 </template>
 <script>
+import { mapState, mapMutations } from "vuex";
 import Title from "@/components/Title/Title.vue";
 import ContactForm from "@/components/ContactForm/ContactForm.vue";
 export default {
@@ -177,6 +88,12 @@ export default {
       bottom: 0
     };
   },
+  computed: {
+    ...mapState(["ourSteps", "stepsLoaded"])
+  },
+  created() {
+    this.$store.dispatch("loadSteps");
+  },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
     this.pos = window.scrollY;
@@ -188,11 +105,7 @@ export default {
     this.top =
       document.querySelector(".title-container").clientHeight +
       document.querySelector(".acomp-desc").clientHeight;
-    console.log(
-      document.querySelector(".title-container").clientHeight +
-        document.querySelector(".acomp-desc").clientHeight +
-        document.querySelector(".acomp-container").clientHeight
-    );
+
     let dots = document.querySelectorAll(".dot");
     dots.forEach(dot => {
       dot.classList.remove("dot-active");
@@ -202,6 +115,8 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
+    ...mapMutations(["ourSteps", "stepsLoaded"]),
+
     handleScroll() {
       this.dotPos = window
         .getComputedStyle(document.querySelector("#dot"))
@@ -217,8 +132,6 @@ export default {
           this.top +
           "px"})`;
 
-      console.log(this.pos, parseInt(this.dotPos.replace(/[^\d.-]/g, "")));
-
       let dots = document.querySelectorAll(".dot");
       dots.forEach(dot => {
         let dotTop = window.getComputedStyle(dot).getPropertyValue("top");
@@ -232,6 +145,18 @@ export default {
         }
       });
     }
+  },
+  watch: {
+    stepsLoaded: {
+      handler: function() {
+        if (this.stepsLoaded) {
+          console.log(this.ourSteps.data.items.sort((a, b) =>{
+            return b.fields.id - a.fields.id
+          }))
+        }
+      },
+      immediate: true
+    },
   }
 };
 </script>
