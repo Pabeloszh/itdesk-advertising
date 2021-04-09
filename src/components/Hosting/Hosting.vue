@@ -24,6 +24,7 @@
       </div>
     </div>
     <div class="off-box">
+      <a href="#hosting">
       <div class="box">
         <img
           src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-hosting1-p.svg"
@@ -37,6 +38,8 @@
           </p>
         </div>
       </div>
+      </a>
+      <a href="#cms">
       <div class="box">
         <img
           src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-hosting2-p.svg"
@@ -50,6 +53,8 @@
           </p>
         </div>
       </div>
+      </a>
+      <a href="#admin">
       <div class="box">
         <img
           src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-hosting3-p.svg"
@@ -63,6 +68,8 @@
           </p>
         </div>
       </div>
+      </a>
+      <a href="#email">
       <div class="box">
         <img
           src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-hosting4-p.svg"
@@ -75,7 +82,8 @@
           </p>
         </div>
       </div>
-      <div class="box">
+      </a>
+      <div class="box" @click="$router.push('/domeny-i-certyfikaty-ssl')">
         <img
           src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-hosting5-p.svg"
           alt="icon"
@@ -90,7 +98,7 @@
       </div>
     </div>
   </div>
-  <div class="hosting-table">
+  <div class="hosting-table" id="hosting">
     <h2>HOSTING STRON I APLIKACJI</h2>
     <div class="table">
       <div class="col">
@@ -442,7 +450,7 @@
       </div>
     </div>
   </div>
-  <div class="hosting-admin">
+  <div class="hosting-admin" id="admin">
     <h2>DEDYKOWANA ADMINISTRACJA</h2>
     <div class="admin-box">
       <div>
@@ -459,7 +467,7 @@
       </div>
     </div>
   </div>
-  <div class="hosting-cms">
+  <div class="hosting-cms" id="cms">
     <h2>HOSTING MAGENTO I WORDPRESS</h2>
     <div class="table">
       <div>
@@ -488,7 +496,7 @@
       </div>
     </div>
   </div>
-  <div class="hosting-email">
+  <div class="hosting-email" id="email">
     <h2>DODATKOWE PAKIETY EMAIL</h2>
     <div class="table">
       <div class="col">

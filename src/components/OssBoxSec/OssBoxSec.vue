@@ -1,6 +1,6 @@
 <template>
   <div class="off-box">
-    <div class="box">
+    <div class="box" @click="$router.push('/sklep-sote')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/sote2-1.png"
         alt="icon"
@@ -14,7 +14,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/sklep-presta')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/presta2.png"
         alt="icon"
@@ -27,7 +27,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/sklep-magento')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/09/magento2.png"
         alt="icon"
