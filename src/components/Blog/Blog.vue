@@ -6,7 +6,9 @@
     </div>
     <div class="blog-desc">
       <BlogCard
-        v-for="(item, index) in blogPosts.data.items"
+        v-for="(item, index) in blogPosts.data.items.sort((a, b) =>{
+            return b.fields.id - a.fields.id
+          })"
         :key="index"
         @click="
           $router.push({ name: 'BlogPost', params: { post: item.fields.url } })
