@@ -14,8 +14,17 @@ export default {
   components: {
     Navbar,
     Footer
+  },
+  watch: {
+    $route: {
+      handler: function() {
+        window.scrollTo(0,0);
+      },
+      immediate: true
+    },
   }
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+</style>
