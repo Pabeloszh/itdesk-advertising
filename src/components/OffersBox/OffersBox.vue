@@ -1,6 +1,6 @@
 <template>
   <div class="off-box">
-    <div class="box">
+    <div class="box" @click="$router.push('/marketing-internetowy')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona1-p.svg"
         alt="icon"
@@ -20,7 +20,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/strony-i-sklepy-internetowe')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona2-p-1.svg"
         alt="icon"
@@ -42,7 +42,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/hosting-i-domeny')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona3-p.svg"
         alt="icon"
@@ -58,7 +58,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/oprogramowanie-dedykowane')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona4-p.svg"
         alt="icon"
@@ -70,7 +70,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/aplikacje-mobilne')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona5-p.svg"
         alt="icon"
@@ -83,7 +83,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/wideomarketing')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-media-1.png"
         alt="icon"
@@ -97,7 +97,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/uslugi-w-chmurze')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-chmura.png"
         alt="icon"
@@ -111,7 +111,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/szkolenia')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-szkolenia.png"
         alt="icon"
