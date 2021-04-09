@@ -5,7 +5,7 @@
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-strony1-p.svg"
         alt="icon"
       />
-      <div>
+      <div @click="$router.push('/systemy-zarzadzania-trescia-cms')">
         <h5>SYSTEMY ZARZĄDZANIA TREŚCIĄ CMS</h5>
         <p>
           Pozwalają na prostą, intuicyjną edycję, aktualizację i rozbudowę stron
@@ -14,7 +14,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/strony-internetowe')">
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-strony2-p.svg"
         alt="icon"
@@ -27,7 +27,7 @@
         </p>
       </div>
     </div>
-    <div class="box">
+    <div class="box" @click="$router.push('/opieka-nad-strona-www')"> 
       <img
         src="https://agencja-interaktywna.opole.pl/wp-content/uploads/2020/10/ikona-strony3-p.svg"
         alt="icon"
